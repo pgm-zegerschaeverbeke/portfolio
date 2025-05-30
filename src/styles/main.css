@@ -1,0 +1,100 @@
+@import url("./reset.css");
+@import url("./variables.css");
+@import url("./hero.css");
+@import url("./nav.css");
+@import url("./container.css");
+@import url("./section.css");
+@import url("./footer.css");
+@import url("./link.css");
+@import url("./images.css");
+@import url("./lists.css");
+@import url("./theme-toggle.css");
+@import url("./sr.css");
+@import url("./modal.css");
+@import url("./grid.css");
+@import url("./popover.css");
+@import url("./btn.css");
+@import url("./form.css");
+@import url("./card.css");
+@import url("./animations/autoShow.css");
+@import url("./animations/autoRotate.css");
+@import url("./animations/fade-in-left.css");
+@import url("./animations/pulse.css");
+@import url("./animations/quick-flip.css");
+@import url("./animations/page-transition.css");
+@import url("./animations/fade-in-n-out.css");
+@import url("./animations/fade-out.css");
+@import url("./animations/drawLoop.css");
+@import url("./animations/phoneShake.css");
+
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--text);
+  background-color: var(--bg);
+}
+
+a {
+  color: var(--neutrals-black);
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+h1 {
+  white-space: nowrap;
+  font-size: clamp(1rem, 9vw, 15rem);
+
+  @media screen and (min-width: 768px) {
+    font-size: clamp(1rem, 9.5vw, 15rem);
+  }
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.content-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-xxl);
+}
+
+@media screen and (min-width: 768px) {
+  p {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 5rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

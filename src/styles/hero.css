@@ -1,0 +1,33 @@
+.hero {
+  height: 100vh;
+  height: 100svh;
+  position: relative;
+  overflow: hidden;
+  
+}
+
+.hero iframe {
+  transform: scale(1.2);
+}
+
+.hero__content {
+  position: absolute;
+  bottom: 3rem;
+  left: 1.5rem;
+  right: 1.5rem;
+  pointer-events: none;
+}
+
+.hero__title {
+  line-height: 1;
+}
+
+.hero__text {
+  font-size: 1.3rem;
+  font-weight: 500;
+  opacity: 0.5;
+
+  @media screen and (min-width: 768px) {
+    font-size: 1.7rem;
+  }
+}

@@ -1,0 +1,86 @@
+@view-transition {
+  navigation: auto;
+}
+
+::view-transition-old(title),
+::view-transition-new(title),
+::view-transition-old(hero-text),
+::view-transition-new(hero-text) {
+  animation-duration: 600ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+}
+
+::view-transition-old(active-link),
+::view-transition-new(active-link) {
+  animation-duration: 200ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+}
+
+::view-transition-old(title) {
+  animation-name: fade-out;
+}
+::view-transition-new(title) {
+  animation-name: fade-in;
+  animation-delay: 600ms;
+}
+
+::view-transition-old(active-link) {
+  animation-name: fade-out;
+}
+::view-transition-new(active-link) {
+  animation-name: fade-in;
+}
+
+::view-transition-old(hero-text) {
+  animation-name: hero-text-slide-out;
+}
+
+::view-transition-new(hero-text) {
+  animation-name: hero-text-slide-in;
+}
+
+@keyframes hero-text-slide-out {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-100vw);
+  }
+}
+
+@keyframes hero-text-slide-in {
+  from {
+    opacity: 0;
+    transform: translateX(-100vw);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+html:not(:has(::view-transition-old(root))) body {
+  transition: opacity 0.4s ease;
+}

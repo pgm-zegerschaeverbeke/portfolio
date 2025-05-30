@@ -1,0 +1,17 @@
+.quick-flip {
+  --transition-duration: 0.375s;
+  --timing-function: cubic-bezier(0.66, 0, 0.34, 1);
+
+  overflow-y: clip;
+
+  > * {
+    display: block;
+    transition: transform var(--transition-duration) var(--timing-function),
+      translate 0ms calc(var(--transition-duration) / 2);
+  }
+
+  &:is(:hover) > * {
+    transform: translateY(-2lh);
+    translate: 0 2lh;
+  }
+}

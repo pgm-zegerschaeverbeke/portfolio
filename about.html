@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Zeger Schaeverbeke | Web Developer & Creative Technologist</title>
+    <meta name="description"
+        content="Learn more about Zeger Schaeverbeke, a creative web developer studying at Arteveldehogeschool. Discover his passion for web design, technology, and life beyond the screen." />
+    <meta property="og:image" content="/src/images/SEO/SEO-about.webp" />
+
+    <link rel="stylesheet" href="build/styles/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="/src/images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/src/images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/src/images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/src/images/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/src/images/favicon/site.webmanifest" />
+</head>
+
+<body>
+    <nav class="main-nav" role="navigation" aria-label="Main menu">
+        <ul class="main-nav__menu" id="main-nav__menu">
+            <li class="main-nav__toggle">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark and light mode">
+                    <svg class="theme-toggle__moon" id="moon-icon" width="1.5rem" height="1.5rem" viewBox="0 0 21 21"
+                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                        <path
+                            d="M10.553 19.2499C13.7848 19.2499 16.7487 17.4781 18.2923 14.6247C18.4201 14.3903 18.3978 14.1037 18.2395 13.8917C18.0812 13.6796 17.8083 13.5777 17.5535 13.6357C17.0259 13.7509 16.4941 13.808 15.9706 13.808C11.8639 13.808 8.52147 10.4509 8.52147 6.32425C8.52147 5.07847 8.83395 3.84584 9.4226 2.75507C9.5504 2.52066 9.52814 2.23408 9.36984 2.02203C9.21154 1.80998 8.93863 1.70809 8.68388 1.76609C4.66543 2.63995 1.75 6.27124 1.75 10.4062C1.75 15.2832 5.69838 19.25 10.5529 19.25L10.553 19.2499Z" />
+                    </svg>
+                    <svg class="theme-toggle__sun" id="sun-icon" width="1.5rem" height="1.5rem" viewBox="0 0 19 19"
+                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M13.4583 9.49967C13.4583 11.6862 11.6862 13.4583 9.49967 13.4583C7.31355 13.4583 5.54163 11.6862 5.54163 9.49967C5.54163 7.31355 7.3137 5.54163 9.49967 5.54163C11.6862 5.54163 13.4583 7.3137 13.4583 9.49967" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M11.3 1.74415C11.3 2.70751 10.5192 3.48904 9.55506 3.48904C8.5917 3.48904 7.81091 2.70751 7.81091 1.74415C7.81091 0.780788 8.5917 0 9.55506 0C10.5192 0 11.3 0.780788 11.3 1.74415" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M5.28875 2.74322C5.96933 3.42455 5.96933 4.52893 5.28875 5.21019C4.60743 5.89152 3.50305 5.89152 2.82178 5.21019C2.14046 4.52887 2.14046 3.42449 2.82178 2.74322C3.50311 2.06264 4.60748 2.06264 5.28875 2.74322Z" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M1.74415 7.7002C2.70751 7.7002 3.48904 8.48098 3.48904 9.44508C3.48904 10.4084 2.70751 11.1892 1.74415 11.1892C0.780788 11.1892 0 10.4084 0 9.44508C0 8.48098 0.780788 7.7002 1.74415 7.7002" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M2.74322 13.7112C3.42455 13.0307 4.52893 13.0307 5.21019 13.7112C5.89151 14.3926 5.89151 15.4969 5.21019 16.1782C4.52887 16.8595 3.42449 16.8595 2.74322 16.1782C2.06264 15.4969 2.06264 14.3925 2.74322 13.7112Z" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M11.1892 17.2559C11.1892 18.2192 10.4084 19 9.44508 19C8.48098 19 7.7002 18.2192 7.7002 17.2559C7.7002 16.2925 8.48098 15.511 9.44508 15.511C10.4084 15.511 11.1892 16.2925 11.1892 17.2559" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M13.7111 16.2568C13.0305 15.5754 13.0305 14.4711 13.7111 13.7898C14.3924 13.1085 15.4968 13.1085 16.1781 13.7898C16.8594 14.4711 16.8594 15.5755 16.1781 16.2568C15.4968 16.9374 14.3924 16.9374 13.7111 16.2568Z" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M17.2559 11.2999C16.2925 11.2999 15.511 10.5192 15.511 9.55506C15.511 8.5917 16.2925 7.81091 17.2559 7.81091C18.2192 7.81091 19 8.5917 19 9.55506C19 10.5192 18.2192 11.2999 17.2559 11.2999Z" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M16.2568 5.28887C15.5754 5.96945 14.4711 5.96945 13.7898 5.28887C13.1085 4.60755 13.1085 3.50317 13.7898 2.82191C14.4711 2.14058 15.5755 2.14058 16.2568 2.82191C16.9373 3.50323 16.9373 4.60761 16.2568 5.28887Z" />
+                    </svg>
+                </button>
+            </li>
+
+            <li class="main-nav__menu-item">
+                <a href="index.html" class="main-nav__menu-link">Home</a>
+            </li>
+            <li class="main-nav__menu-item active" style="view-transition-name: active-link">
+                <a href="about.html" class="main-nav__menu-link" aria-current="page">About</a>
+            </li>
+            <li class="main-nav__menu-item">
+                <a href="projects.html" class="main-nav__menu-link">Projects</a>
+            </li>
+            <li class="main-nav__menu-item">
+                <a href="contact.html" class="main-nav__menu-link">Contact</a>
+            </li>
+        </ul>
+
+        <button class="main-nav__toggle hidden" aria-expanded="false" aria-controls="main-nav__menu"
+            aria-label="Toggle navigation menu">
+            <span class="main-nav__toggle-text">Menu</span>
+            <span class="main-nav__toggle-icon" aria-hidden="true"></span>
+        </button>
+    </nav>
+
+    <main class="content-wrapper" role="main">
+        <section class="hero" aria-labelledby="hero-title">
+            <iframe id="light-viewer"
+                src="https://my.spline.design/glassmorphlandingpage-56a1b0ac17b17a9933c265b617853ed0/" frameborder="0"
+                width="100%" height="100%" title="Light Hero Animation" aria-hidden="true" role="presentation"></iframe>
+            <iframe id="dark-viewer"
+                src="https://my.spline.design/glassmorphlandingpagecopy-e481280d06956630d61683e7165cbe0b/"
+                frameborder="0" width="100%" height="100%" title="Dark Hero Animation" aria-hidden="true"
+                role="presentation"></iframe>
+            <div class="hero__content">
+                <p class="hero__text" style="view-transition-name: hero-text">What drives me — beyond the code and
+                    design.</p>
+                <h1 class="hero__title" id="hero-title" style="view-transition-name: title">Meet Zeger</h1>
+            </div>
+        </section>
+        <!-- Intro with Image -->
+        <section class="section fadeInNOut" aria-labelledby="intro-title">
+            <div class="container container--column">
+                <header>
+                    <h2 class="heading heading--secondary" id="intro-title">Hey, I’m Zeger 👋</h2>
+                    <span class="sr-only">Wave emoji next to Zeger</span>
+                </header>
+                <div class="container container--row">
+                    <div class="container__text">
+                        <p>
+                            Welcome to my digital corner! I’m currently studying <strong>Graduaat Programmeren</strong>
+                            at
+                            Arteveldehogeschool. I'm passionate about how code, creativity, and curiosity intersect to
+                            build
+                            experiences that are both useful and beautiful.
+                        </p>
+                        <p>
+                            Whether it’s figuring out the logic behind a feature or crafting user-friendly layouts, I
+                            love
+                            the challenge of bringing ideas to life through the browser.
+                        </p>
+                    </div>
+                    <figure class="img__container autoShow">
+                        <img src="src/images/portfolio-portrait.webp"
+                            alt="Portrait of Zeger Schaeverbeke smiling at the camera, wearing casual clothing in a light setting."
+                            class="img img--mask">
+                        <figcaption class="sr-only">Portrait of Zeger Schaeverbeke</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="section fadeInNOut" aria-labelledby="dev-title">
+            <div class="container container--column">
+                <header>
+                    <h2 class="heading heading--secondary" id="dev-title">My Developer Side</h2>
+                </header>
+                <div class="container container--row">
+                    <article class="container__text">
+                        <p>
+                            As a student and aspiring web developer, I’m steadily building my toolbox. I enjoy working
+                            on
+                            both front-end and back-end tasks — from building UIs with HTML, CSS, and JavaScript, to
+                            templating with Twig and managing content with Craft CMS.
+                        </p>
+                        <p>
+                            I’m especially drawn to clean design systems and making digital interfaces feel intuitive
+                            and
+                            engaging. I love diving into problem-solving and continuously improving how I write and
+                            organize
+                            code.
+                        </p>
+                    </article>
+                    <ul class="list list--column list--skills" role="list" aria-label="Skill overview">
+                        <li class="list-skill__item">
+                            <span class="icon" aria-hidden="true">🧩</span>
+                            <p><strong>Twig & Craft CMS</strong> — dynamic, content-driven web building</p>
+                        </li>
+                        <li class="list-skill__item">
+                            <span class="icon" aria-hidden="true">🛠</span>
+                            <p><strong>PHP</strong> — back-end logic & CMS integration</p>
+                        </li>
+                        <li class="list-skill__item">
+                            <span class="icon" aria-hidden="true">💻</span>
+                            <p><strong>HTML & CSS</strong> — clean structure and layout foundations</p>
+                        </li>
+                        <li class="list-skill__item">
+                            <span class="icon" aria-hidden="true">⚙</span>
+                            <p><strong>JavaScript</strong> — interactivity and dynamic user experiences</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="section__footer autoShow">
+                    <a href="projects.html" class="link link--primary">View all my projects</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--bottom-spacing fadeInNOut" aria-labelledby="life-title">
+            <div class="container container--column">
+                <header>
+                    <h2 class="heading heading--secondary" id="life-title">Outside the Code</h2>
+                </header>
+                <article class="container__text">
+                    <p>
+                        Life isn’t just about screens and syntax. I genuinely enjoy being outdoors — the sun, the sea,
+                        long hikes, and anything that gets my body moving. Even if I barely tan, just being near water
+                        recharges me.
+                    </p>
+                    <p>
+                        I’m into sports, adventure, and spontaneous road trips — but I also love slow, cozy evenings at
+                        home. I’m a bit of a homebody at heart, and I love sharing quiet moments and simple joys with my
+                        girlfriend. Whether it's cooking, watching a series, or just talking — that time means a lot to
+                        me.
+                    </p>
+                    <p>
+                        That balance — between adventure and comfort, between code and connection — is what really
+                        defines me as a person.
+                    </p>
+                    <p>
+                        Still here? That must mean something. Hit that button and let’s connect!
+                    </p>
+                </article>
+                <div class="section__footer autoShow">
+                    <a href="contact.html" class="link link--primary">Connect</a>
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="section section--footer">
+            <p>&copy; 2025 Zeger Schaeverbeke. All rights reserved.</p>
+
+            <nav aria-label="Social media">
+                <ul class="list list-socials">
+                    <li>
+                        <a class="link__socials" target="_blank" rel="noopener noreferrer" href="https://twitter.com/">
+                            <p>Twitter/X</p>
+                            <img class="img img--socials img--socials-x" src="src/images/twitter-logo.avif"
+                                alt="Follow me on Twitter/X" />
+                            <span class="sr-only">Twitter/X</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link__socials" target="_blank" rel="noopener noreferrer"
+                            href="https://instagram.com/">
+                            <p>Instagram</p>
+                            <img class="img img--socials img--socials-ig" src="src/images/instagram-logo.avif"
+                                alt="Follow me on Instagram" />
+                            <span class="sr-only">Instagram</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link__socials" target="_blank" rel="noopener noreferrer" href="https://linkedin.com/">
+                            <p>LinkedIn</p>
+                            <img class="img img--socials img--socials-li" src="src/images/linkedin-logo.avif"
+                                alt="Connect with me on LinkedIn" />
+                            <span class="sr-only">LinkedIn</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <script src="build/scripts/app.js"></script>
+</body>
+
+</html>

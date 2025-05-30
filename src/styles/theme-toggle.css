@@ -1,0 +1,24 @@
+.theme-toggle {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  padding-left: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.theme-toggle__moon {
+  fill: var(--neutrals-white);
+  transition: all ease-in-out 0.8s;
+}
+
+.theme-toggle__sun {
+  fill: var(--active-nav-link);
+  transition: all ease-in-out 0.8s;
+}
+
+.theme-toggle__sun:hover,
+.theme-toggle__moon:hover {
+  rotate: 360deg;
+}

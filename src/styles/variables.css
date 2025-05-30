@@ -1,0 +1,28 @@
+:root {
+  --neutrals-white: #f5f5f5;
+  --neutrals-black: #1a1a1a;
+  --neutrals-grey: #E7E6E6;
+  --neutrals-dark-grey: #3d3d3d;
+  --active-nav-link: #bf6d1b;
+  --font-family: "Work Sans", sans-serif;
+  --gap-xs: 0.4rem;
+  --gap-s: 1rem;
+  --gap-m: 1.5rem;
+  --gap-l: 2rem;
+  --gap-xl: 3rem;
+  --gap-xxl: 5rem;
+}
+
+:root[data-theme="light"] {
+  --text: var(--neutrals-black);
+  --bg: var(--neutrals-white);
+  --bg-secondary: var(--neutrals-black);
+  --bg-tertiary: var(--neutrals-grey);
+}
+
+:root[data-theme="dark"] {
+  --text: var(--neutrals-white);
+  --bg: var(--neutrals-black);
+  --bg-secondary: var(--neutrals-white);
+  --bg-tertiary: var(--neutrals-dark-grey)
+}

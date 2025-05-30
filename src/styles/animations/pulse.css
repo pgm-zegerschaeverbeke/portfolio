@@ -1,0 +1,23 @@
+@keyframes pulse {
+  0% {
+    box-shadow: 
+      0 0 0px var(--active-nav-link),
+      0 0 0px var(--active-nav-link),
+      0 0 0px var(--active-nav-link),
+      0 0 0px var(--active-nav-link);
+  }
+  50% {
+    box-shadow: 
+      0 0 16px var(--active-nav-link),
+      0 0 32px var(--active-nav-link),
+      0 0 64px var(--active-nav-link),
+      0 0 128px var(--active-nav-link);
+  }
+  100% {
+    box-shadow: 
+      0 0 0px var(--active-nav-link),
+      0 0 0px var(--active-nav-link),
+      0 0 0px var(--active-nav-link),
+      0 0 0px var(--active-nav-link);
+  }
+}

@@ -1,0 +1,26 @@
+.drawLoop {
+  stroke-dasharray: 1500;
+  stroke-dashoffset: 1500;
+  animation: drawLoopAnimation 3s ease-in-out infinite;
+}
+
+@keyframes drawLoopAnimation {
+  0% {
+    stroke-dashoffset: 1500;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  50% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: 1500;
+    opacity: 0;
+  }
+}

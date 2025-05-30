@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Work by Zeger Schaeverbeke | Portfolio & Contact</title>
+    <meta name="description"
+        content="Welcome to the creative portfolio of Zeger Schaeverbeke — a web developer and student at Arteveldehogeschool. Explore projects, discover his coding journey, and get in touch." />
+    <meta property="og:image" content="/src/images/SEO/SEO-index.webp" />
+    <link rel="stylesheet" href="build/styles/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="/src/images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/src/images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/src/images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/src/images/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/src/images/favicon/site.webmanifest" />
+</head>
+
+<body>
+    <nav class="main-nav" role="navigation" aria-label="Main menu">
+        <ul class="main-nav__menu" id="main-nav__menu">
+            <li class="main-nav__toggle">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark and light mode">
+                    <svg class="theme-toggle__moon" id="moon-icon" width="1.5rem" height="1.5rem" viewBox="0 0 21 21"
+                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                        <path
+                            d="M10.553 19.2499C13.7848 19.2499 16.7487 17.4781 18.2923 14.6247C18.4201 14.3903 18.3978 14.1037 18.2395 13.8917C18.0812 13.6796 17.8083 13.5777 17.5535 13.6357C17.0259 13.7509 16.4941 13.808 15.9706 13.808C11.8639 13.808 8.52147 10.4509 8.52147 6.32425C8.52147 5.07847 8.83395 3.84584 9.4226 2.75507C9.5504 2.52066 9.52814 2.23408 9.36984 2.02203C9.21154 1.80998 8.93863 1.70809 8.68388 1.76609C4.66543 2.63995 1.75 6.27124 1.75 10.4062C1.75 15.2832 5.69838 19.25 10.5529 19.25L10.553 19.2499Z" />
+                    </svg>
+                    <svg class="theme-toggle__sun" id="sun-icon" width="1.5rem" height="1.5rem" viewBox="0 0 19 19"
+                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M13.4583 9.49967C13.4583 11.6862 11.6862 13.4583 9.49967 13.4583C7.31355 13.4583 5.54163 11.6862 5.54163 9.49967C5.54163 7.31355 7.3137 5.54163 9.49967 5.54163C11.6862 5.54163 13.4583 7.3137 13.4583 9.49967" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M11.3 1.74415C11.3 2.70751 10.5192 3.48904 9.55506 3.48904C8.5917 3.48904 7.81091 2.70751 7.81091 1.74415C7.81091 0.780788 8.5917 0 9.55506 0C10.5192 0 11.3 0.780788 11.3 1.74415" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M5.28875 2.74322C5.96933 3.42455 5.96933 4.52893 5.28875 5.21019C4.60743 5.89152 3.50305 5.89152 2.82178 5.21019C2.14046 4.52887 2.14046 3.42449 2.82178 2.74322C3.50311 2.06264 4.60748 2.06264 5.28875 2.74322Z" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M1.74415 7.7002C2.70751 7.7002 3.48904 8.48098 3.48904 9.44508C3.48904 10.4084 2.70751 11.1892 1.74415 11.1892C0.780788 11.1892 0 10.4084 0 9.44508C0 8.48098 0.780788 7.7002 1.74415 7.7002" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M2.74322 13.7112C3.42455 13.0307 4.52893 13.0307 5.21019 13.7112C5.89151 14.3926 5.89151 15.4969 5.21019 16.1782C4.52887 16.8595 3.42449 16.8595 2.74322 16.1782C2.06264 15.4969 2.06264 14.3925 2.74322 13.7112Z" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M11.1892 17.2559C11.1892 18.2192 10.4084 19 9.44508 19C8.48098 19 7.7002 18.2192 7.7002 17.2559C7.7002 16.2925 8.48098 15.511 9.44508 15.511C10.4084 15.511 11.1892 16.2925 11.1892 17.2559" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M13.7111 16.2568C13.0305 15.5754 13.0305 14.4711 13.7111 13.7898C14.3924 13.1085 15.4968 13.1085 16.1781 13.7898C16.8594 14.4711 16.8594 15.5755 16.1781 16.2568C15.4968 16.9374 14.3924 16.9374 13.7111 16.2568Z" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M17.2559 11.2999C16.2925 11.2999 15.511 10.5192 15.511 9.55506C15.511 8.5917 16.2925 7.81091 17.2559 7.81091C18.2192 7.81091 19 8.5917 19 9.55506C19 10.5192 18.2192 11.2999 17.2559 11.2999Z" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M16.2568 5.28887C15.5754 5.96945 14.4711 5.96945 13.7898 5.28887C13.1085 4.60755 13.1085 3.50317 13.7898 2.82191C14.4711 2.14058 15.5755 2.14058 16.2568 2.82191C16.9373 3.50323 16.9373 4.60761 16.2568 5.28887Z" />
+                    </svg>
+                </button>
+            </li>
+
+            <li class="main-nav__menu-item active" style="view-transition-name: active-link">
+                <a href="index.html" class="main-nav__menu-link" aria-current="page">Home</a>
+            </li>
+            <li class="main-nav__menu-item">
+                <a href="about.html" class="main-nav__menu-link">About</a>
+            </li>
+            <li class="main-nav__menu-item">
+                <a href="projects.html" class="main-nav__menu-link">Projects</a>
+            </li>
+            <li class="main-nav__menu-item">
+                <a href="contact.html" class="main-nav__menu-link">Contact</a>
+            </li>
+        </ul>
+
+        <button class="main-nav__toggle hidden" aria-expanded="false" aria-controls="main-nav__menu"
+            aria-label="Toggle navigation menu">
+            <span class="main-nav__toggle-text">Menu</span>
+            <span class="main-nav__toggle-icon" aria-hidden="true"></span>
+        </button>
+    </nav>
+
+    <main class="content-wrapper" role="main">
+        <section class="hero" aria-labelledby="hero-title">
+            <iframe id="light-viewer"
+                src="https://my.spline.design/glassmorphlandingpage-56a1b0ac17b17a9933c265b617853ed0/" frameborder="0"
+                width="100%" height="100%" title="Light Hero Animation" aria-hidden="true" role="presentation"></iframe>
+            <iframe id="dark-viewer"
+                src="https://my.spline.design/glassmorphlandingpagecopy-e481280d06956630d61683e7165cbe0b/"
+                frameborder="0" width="100%" height="100%" title="Dark Hero Animation" aria-hidden="true"
+                role="presentation"></iframe>
+            <div class="hero__content">
+                <p class="hero__text" style="view-transition-name: hero-text">A showcase of my journey through design,
+                    code, and creativity.</p>
+                <h1 class="hero__title" id="hero-title" style="view-transition-name: title">Zeger Schaeverbeke</h1>
+            </div>
+        </section>
+
+        <section class="section fadeInNOut">
+            <div class="container container--column">
+                <h2 class="heading heading--secondary autoShow">About Me</h2>
+                <div class="container container--column autoShow">
+                    <div class="container__text">
+                        <p>
+                            I'm currently studying Graduaat Programming at Arteveldehogeschool, where I’m learning the
+                            ins and outs of web development and software engineering. I enjoy exploring new technologies
+                            and improving my coding skills every day.
+                        </p>
+                        <p>
+                            Beyond programming, I love the sun and the sea—nothing beats a day by the water!
+                        </p>
+                        <p>
+                            If you’d like to learn more about me, feel free to click the <strong>“Learn more about me”
+                                link</strong>!
+                        </p>
+                    </div>
+
+                    <a href="about.html" class="link link--primary"
+                        aria-label="Learn more about me, go to About page">Learn more about me</a>
+                </div>
+
+                <figure class="img__container autoShow">
+                    <img class="sun autoRotate" src="src/images/sun.png" alt="sun drawing">
+                </figure>
+            </div>
+        </section>
+
+        <section class="section fadeInNOut">
+            <div class="container container--column">
+                <h2 class="heading autoShow">Projects</h2>
+
+                <ul class="list list--column autoShow">
+                    <li class="quick-flip">
+                        <article class="card" aria-labelledby="title-stam">
+                            <h3 id="title-stam" class="card__title quick-flip">Stam remake</h3>
+                            <p class="card__description">A clean and responsive redesign of the STAM museum for @work-1
+                            </p>
+                            <hr class="card__divider">
+                        </article>
+                    </li>
+                    <li class="quick-flip">
+                        <article class="card" aria-labelledby="title-best">
+                            <h3 id="title-best" class="card__title">Best of 2024</h3>
+                            <p class="card__description">A curated overview of 2024's standout songs, albums, movies,
+                                and series for @work-1</p>
+                            <hr class="card__divider">
+                        </article>
+                    </li>
+                    <li class="quick-flip">
+                        <article class="card" aria-labelledby="title-smallapp">
+                            <h3 id="title-smallapp" class="card__title">Small app</h3>
+                            <p class="card__description">Small music app design made in Figma for WEB-2</p>
+                            <hr class="card__divider">
+                        </article>
+                    </li>
+                </ul>
+
+                <div class="section__footer autoShow">
+                    <a href="projects.html" class="link link--primary"
+                        aria-label="See all projects on the Projects page">All projects</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--contact fadeInLeft">
+            <p class="cta-text">Tap this 'tiny' button to get in touch</p>
+            <div class="link__container">
+                <a href="contact.html" class="link link--secondary"
+                    aria-label="Connect with me through the contact page">Connect</a>
+
+                <svg class="deco-svg right-svg" xmlns="http://www.w3.org/2000/svg" width="438" height="471"
+                    viewBox="0 0 438 471" fill="none" aria-hidden="true" focusable="false">
+                    <path class="draw-path"
+                        d="M8 355C99.5 282 187.5 413 182 404.5C182 212 382.5 279 373 274.5C253 131 439 72.5 429.5 72.5C336.445 77.2107 310.137 63.5988 313 8M334.5 364.5C375.922 395.406 392.573 417.188 412 463"
+                        stroke="var(--text)" stroke-width="16" stroke-linecap="round" />
+                </svg>
+
+                <svg class="deco-svg left-svg" xmlns="http://www.w3.org/2000/svg" width="260" height="258"
+                    viewBox="0 0 260 258" fill="none" aria-hidden="true" focusable="false">
+                    <path class="draw-path"
+                        d="M107.5 249.04C133.451 203.055 60 179.041 66.4999 179.041C189.552 166.722 188.331 130.246 72.9998 9.04059C57.5 -7.24846 239.5 175.045 251.5 43.5406M8 102.046C40.7791 102.135 59.9769 106.393 95.5 121.046M170.5 41.0457C183.977 61.6041 190.15 67.192 192 67.0457"
+                        stroke="var(--text)" stroke-width="16" stroke-linecap="round" />
+                </svg>
+            </div>
+        </section>
+
+
+    </main>
+    <footer class="footer" role="contentinfo">
+        <div class="section section--footer">
+            <p>&copy; 2025 Zeger Schaeverbeke. All rights reserved.</p>
+
+            <nav aria-label="Social media">
+                <ul class="list list-socials">
+                    <li>
+                        <a class="link__socials" target="_blank" rel="noopener noreferrer" href="https://twitter.com/">
+                            <p>Twitter/X</p>
+                            <img class="img img--socials img--socials-x" src="src/images/twitter-logo.avif"
+                                alt="Follow me on Twitter/X" />
+                            <span class="sr-only">Twitter/X</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link__socials" target="_blank" rel="noopener noreferrer"
+                            href="https://instagram.com/">
+                            <p>Instagram</p>
+                            <img class="img img--socials img--socials-ig" src="src/images/instagram-logo.avif"
+                                alt="Follow me on Instagram" />
+                            <span class="sr-only">Instagram</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link__socials" target="_blank" rel="noopener noreferrer" href="https://linkedin.com/">
+                            <p>LinkedIn</p>
+                            <img class="img img--socials img--socials-li" src="src/images/linkedin-logo.avif"
+                                alt="Connect with me on LinkedIn" />
+                            <span class="sr-only">LinkedIn</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <script src="build/scripts/app.js"></script>
+</body>
+
+</html>
