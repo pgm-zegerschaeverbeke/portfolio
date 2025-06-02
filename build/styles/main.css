@@ -421,7 +421,7 @@ h6 {
   transform: rotate(4deg);
 }
 
-.img--socials-ig {
+.img--socials-gh {
   transform: translateY(-4px);
 }
 
@@ -435,7 +435,7 @@ h6 {
 
 .link__socials:hover .img--socials,
 .link__socials:hover .img--socials-x,
-.link__socials:hover .img--socials-ig,
+.link__socials:hover .img--socials-gh,
 .link__socials:hover .img--socials-li {
   transform: translateY(-3rem);
   transition: transform 0.3s ease-in-out;
