@@ -1,21 +1,25 @@
-@import url("./reset.css");
-@import url("./variables.css");
-@import url("./hero.css");
-@import url("./nav.css");
-@import url("./container.css");
-@import url("./section.css");
-@import url("./footer.css");
-@import url("./link.css");
-@import url("./images.css");
-@import url("./lists.css");
-@import url("./theme-toggle.css");
-@import url("./sr.css");
-@import url("./modal.css");
-@import url("./grid.css");
-@import url("./popover.css");
-@import url("./btn.css");
-@import url("./form.css");
-@import url("./card.css");
+@import url("./abstracts/variables.css");
+
+@import url("./base/reset.css");
+
+@import url("./layouts/container.css");
+@import url("./layouts/footer.css");
+@import url("./layouts/grid.css");
+@import url("./layouts/hero.css");
+@import url("./layouts/section.css");
+
+@import url("./components/btn.css");
+@import url("./components/card.css");
+@import url("./components/form.css");
+@import url("./components/images.css");
+@import url("./components/link.css");
+@import url("./components/lists.css");
+@import url("./components/modal.css");
+@import url("./components/nav.css");
+@import url("./components/popover.css");
+@import url("./components/sr.css");
+@import url("./components/theme-toggle.css");
+
 @import url("./animations/autoShow.css");
 @import url("./animations/autoRotate.css");
 @import url("./animations/fade-in-left.css");
@@ -26,7 +30,6 @@
 @import url("./animations/fade-out.css");
 @import url("./animations/drawLoop.css");
 @import url("./animations/phoneShake.css");
-
 
 html {
   font-size: 16px;
@@ -88,28 +91,16 @@ p {
 }
 
 .responsive-map {
-    width: 100%;
-    height: 15.625rem;
-    border: 0;
-    border-radius: 0.75rem;
-    
-    @media (min-width: 30rem) {
-        height: 21.875rem;
-    }
-    
-    @media (min-width: 48rem) {
-        height: 28.125rem;
-    }
+  width: 100%;
+  height: 15.625rem;
+  border: 0;
+  border-radius: 0.75rem;
+
+  @media (min-width: 30rem) {
+    height: 21.875rem;
+  }
+
+  @media (min-width: 48rem) {
+    height: 28.125rem;
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
