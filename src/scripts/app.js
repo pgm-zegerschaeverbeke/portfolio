@@ -1,3 +1,5 @@
+import { renderProjects } from './Render.js';
+
 (function () {
   const $themeToggleButton = document.getElementById("theme-toggle");
   const $sunIcon = document.getElementById("sun-icon");
@@ -67,3 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+if (document.getElementById('projects-grid')) {
+  renderProjects();
+}

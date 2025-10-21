@@ -1,11 +1,53 @@
 /******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
+
+/***/ "./src/data/projects.json":
+/*!********************************!*\
+  !*** ./src/data/projects.json ***!
+  \********************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('[{"title":"Stam remake","tech":["HTML","CSS Grid","JS"],"image":"src/images/stam-mockup.webp","modalTitle":"Stam Remake @work-1","description":"A clean and responsive redesign of the STAM museum site using modern layout techniques and smooth animations."},{"title":"Best of 2024","tech":["HTML","CSS","CSS Grid","JavaScript"],"image":"src/images/bestOf-mockup.webp","modalTitle":"Best of 2024 @work-1","description":"A curated overview of 2024\'s standout songs, albums, movies, and series — fetched from external sources and displayed in an engaging, data-driven layout."},{"title":"Small app","tech":["Figma"],"image":"src/images/smallApp-mockup.webp","modalTitle":"Small music app WEB-2","description":"A sleek and intuitive music app concept, designed in Figma to explore UI patterns for browsing, playing, and organizing songs."},{"title":"To do app","tech":["HTML","CSS","Node","Express","JavaScript"],"image":"src/images/todo-mockup.webp","modalTitle":"To do app PGM-3","description":"A functional to-do list app built with Node and Express, featuring task creation, categorization, and dynamic updates — designed to manage daily goals with clarity and structure."},{"title":"Paws.","tech":["HTML","CSS"],"image":"src/images/paws-mockup.webp","modalTitle":"Paws. digital agency WEB-1","description":"A concept website for a fictional digital agency, showcasing modern design, service sections, and a clean layout to reflect a professional online presence."},{"title":"Portfolio one pager","tech":["HTML","CSS"],"image":"src/images/portfolio-mockup.webp","modalTitle":"Portfolio WEB-2","description":"A dynamic portfolio site built in Web-2, featuring a masonry grid layout and rich animations to showcase creative work in an engaging, interactive flow."},{"title":"Gamescom","tech":["HTML","CSS","JavaScript"],"image":"src/images/gamescom-mockup.webp","modalTitle":"Gamescom PGM-1","description":"A dynamic Gamescom-themed website brought to life with JavaScript — featuring interactive elements, live data handling, and a focus on immersive user experience."},{"title":"Joie","tech":["HTML","CSS"],"image":"src/images/joie-mockup.webp","modalTitle":"Joie personal project","description":"Joie is a personal branding and design project for a fictional clothing label, created prior to my studies. It blends minimal aesthetics with a bold visual identity to capture a modern fashion vibe."}]');
+
+/***/ }),
+
+/***/ "./src/scripts/Render.js":
+/*!*******************************!*\
+  !*** ./src/scripts/Render.js ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   renderProjects: () => (/* binding */ renderProjects)
+/* harmony export */ });
+/* harmony import */ var _data_projects_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../data/projects.json */ "./src/data/projects.json");
+
+function renderProjects() {
+  var gridId = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "projects-grid";
+  var grid = document.getElementById(gridId);
+  if (!grid) return;
+  grid.innerHTML = _data_projects_json__WEBPACK_IMPORTED_MODULE_0__.map(function (project) {
+    return "\n    <li class=\"grid-list__item fadeInNOut\">\n      <h3 class=\"grid-list__title\">".concat(project.title, "</h3>\n      <div class=\"grid-list__actions\">\n        <button popovertarget=\"stack-").concat(slugify(project.title), "\" class=\"btn btn--secondary\" aria-controls=\"stack-").concat(slugify(project.title), "\" aria-expanded=\"false\">Tech Stack</button>\n        <div class=\"popover\" id=\"stack-").concat(slugify(project.title), "\" popover role=\"tooltip\">").concat(project.tech.join(", "), "</div>\n        <button data-trigger=\"modal-").concat(slugify(project.title), "\" class=\"btn btn--secondary\" aria-haspopup=\"dialog\" aria-controls=\"modal-").concat(slugify(project.title), "\" aria-expanded=\"false\">More info</button>\n        <dialog data-modal=\"modal-").concat(slugify(project.title), "\" id=\"modal-").concat(slugify(project.title), "\" class=\"modal\" role=\"dialog\" aria-modal=\"true\" aria-labelledby=\"modal-title-").concat(slugify(project.title), "\">\n          <article class=\"modal__content\">\n            <img src=\"").concat(project.image, "\" alt=\"").concat(project.title, " preview\" class=\"modal__image\" />\n            <div class=\"modal__text\">\n              <h4 id=\"modal-title-").concat(slugify(project.title), "\">").concat(project.modalTitle, "</h4>\n              <p><strong>Tech:</strong> ").concat(project.tech.join(", "), "</p>\n              <p>").concat(project.description, "</p>\n            </div>\n            <button data-close class=\"btn btn--close\" aria-label=\"Close modal\">Close</button>\n          </article>\n        </dialog>\n      </div>\n    </li>\n  ");
+  }).join("");
+}
+
+// Helper to create a slug from a project title
+function slugify(str) {
+  return str.toLowerCase().replace(/[^a-z0-9]+/g, "").replace(/(^-|-$)/g, "");
+}
+
+/***/ }),
 
 /***/ "./src/scripts/app.js":
 /*!****************************!*\
   !*** ./src/scripts/app.js ***!
   \****************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Render_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Render.js */ "./src/scripts/Render.js");
 
 (function () {
   var $themeToggleButton = document.getElementById("theme-toggle");
@@ -66,6 +108,9 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 });
+if (document.getElementById('projects-grid')) {
+  (0,_Render_js__WEBPACK_IMPORTED_MODULE_0__.renderProjects)();
+}
 
 /***/ }),
 
@@ -75,7 +120,6 @@ document.addEventListener('DOMContentLoaded', function () {
   \*****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
@@ -141,6 +185,18 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 				}
 /******/ 			}
 /******/ 			return result;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
 /******/ 		};
 /******/ 	})();
 /******/ 	
