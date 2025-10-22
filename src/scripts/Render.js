@@ -1,3 +1,4 @@
+import skills from "../data/skills.json";
 import projects from "../data/projects.json";
 
 export function renderProjects(gridId = "projects-grid") {
@@ -69,6 +70,28 @@ export function renderFeaturedProjects(ulId = "featured-projects") {
       </article>
     </li>
   `
+    )
+    .join("");
+}
+
+export function renderSkills(ulId = "skill-overview") {
+  const ul = document.getElementById(ulId);
+  if (!ul) return;
+
+  ul.innerHTML = skills
+    .map(
+      (group) => `
+        <li class="list list--column list-skill__group">
+          <span class="list-skill__group-title">${group.icon} ${
+        group.group
+      }:</span>
+          <ul class="list-skill__items">
+            ${group.skills
+              .map((skill) => `<li class="list-skill__item">&#x2022; ${skill}</li>`)
+              .join("")}
+          </ul>
+        </li>
+      `
     )
     .join("");
 }

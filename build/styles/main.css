@@ -670,29 +670,18 @@ textarea {
 }
 
 .list--skills {
-  display: grid;
   gap: var(--gap-s);
 }
 
-.list--skills:hover .list-skill__item:not(:hover) {
-  filter: grayscale(1) blur(4px);
-}
 
-.list-skill__item {
-  display: grid;
-  grid-template-columns: 2rem 1fr;
-  align-items: center;
-  -moz-column-gap: var(--gap-s);
-       column-gap: var(--gap-s);
-  transition: all 0.3s ease-in-out;
-}
 
-.list--skills .icon {
-  font-size: 1.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  line-height: 1;
+.list-skill__group {
+  gap: var(--gap-xs);
+
+  & .list-skill__group-title {
+    font-weight: 700;
+    font-size: 1.125rem;
+  }
 }
 
 .list--skills p {

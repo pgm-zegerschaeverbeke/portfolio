@@ -1,6 +1,6 @@
 import initMoveInLeftAnimations from "./animations/move-in-left.js";
 import initPopInAnimations from "./animations/pop-in.js";
-import { renderProjects, renderFeaturedProjects } from "./Render.js";
+import { renderProjects, renderFeaturedProjects, renderSkills } from "./Render.js";
 
 (function () {
   const $themeToggleButton = document.getElementById("theme-toggle");
@@ -77,6 +77,10 @@ if (document.getElementById("projects-grid")) {
 
 if (document.getElementById("featured-projects")) {
   renderFeaturedProjects();
+}
+
+if (document.getElementById("skill-overview")) {
+  renderSkills();
 }
 
 document.addEventListener("DOMContentLoaded", () => {

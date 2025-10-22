@@ -11607,6 +11607,16 @@ module.exports = /*#__PURE__*/JSON.parse('[{"title":"Stam remake","tech":["HTML"
 
 /***/ }),
 
+/***/ "./src/data/skills.json":
+/*!******************************!*\
+  !*** ./src/data/skills.json ***!
+  \******************************/
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('[{"icon":"💻","group":"Front-end","skills":["HTML • CSS • JavaScript","GSAP for advanced web animations","Basic experience with Rive & Spline (interactive motion design)","Very basic knowledge of TypeScript & Angular"]},{"icon":"🧩","group":"Back-end & CMS","skills":["Craft CMS & Twig templating","Node.js & Express"]},{"icon":"🔧","group":"Workflow & Design","skills":["Git & GitHub","VS Code","Figma"]},{"icon":"📚","group":"Currently learning","skills":["React and Vite","PHP with Laravel, Laravel Filament, and SQL"]}]');
+
+/***/ }),
+
 /***/ "./src/scripts/Render.js":
 /*!*******************************!*\
   !*** ./src/scripts/Render.js ***!
@@ -11616,15 +11626,18 @@ module.exports = /*#__PURE__*/JSON.parse('[{"title":"Stam remake","tech":["HTML"
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   renderFeaturedProjects: () => (/* binding */ renderFeaturedProjects),
-/* harmony export */   renderProjects: () => (/* binding */ renderProjects)
+/* harmony export */   renderProjects: () => (/* binding */ renderProjects),
+/* harmony export */   renderSkills: () => (/* binding */ renderSkills)
 /* harmony export */ });
-/* harmony import */ var _data_projects_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../data/projects.json */ "./src/data/projects.json");
+/* harmony import */ var _data_skills_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../data/skills.json */ "./src/data/skills.json");
+/* harmony import */ var _data_projects_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../data/projects.json */ "./src/data/projects.json");
+
 
 function renderProjects() {
   var gridId = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "projects-grid";
   var grid = document.getElementById(gridId);
   if (!grid) return;
-  grid.innerHTML = _data_projects_json__WEBPACK_IMPORTED_MODULE_0__.map(function (project) {
+  grid.innerHTML = _data_projects_json__WEBPACK_IMPORTED_MODULE_1__.map(function (project) {
     return "\n    <li class=\"grid-list__item fadeInNOut\">\n      <h3 class=\"grid-list__title\">".concat(project.title, "</h3>\n      <div class=\"grid-list__actions\">\n        <button popovertarget=\"stack-").concat(slugify(project.title), "\" class=\"btn btn--secondary\" aria-controls=\"stack-").concat(slugify(project.title), "\" aria-expanded=\"false\">Tech Stack</button>\n        <div class=\"popover\" id=\"stack-").concat(slugify(project.title), "\" popover role=\"tooltip\">").concat(project.tech.join(", "), "</div>\n        <button data-trigger=\"modal-").concat(slugify(project.title), "\" class=\"btn btn--secondary\" aria-haspopup=\"dialog\" aria-controls=\"modal-").concat(slugify(project.title), "\" aria-expanded=\"false\">More info</button>\n        <dialog data-modal=\"modal-").concat(slugify(project.title), "\" id=\"modal-").concat(slugify(project.title), "\" class=\"modal\" role=\"dialog\" aria-modal=\"true\" aria-labelledby=\"modal-title-").concat(slugify(project.title), "\">\n          <article class=\"modal__content\">\n            <img src=\"").concat(project.image, "\" alt=\"").concat(project.title, " preview\" class=\"modal__image\" />\n            <div class=\"modal__text\">\n              <h4 id=\"modal-title-").concat(slugify(project.title), "\">").concat(project.modalTitle, "</h4>\n              <p><strong>Tech:</strong> ").concat(project.tech.join(", "), "</p>\n              <p>").concat(project.description, "</p>\n            </div>\n            <button data-close class=\"btn btn--close\" aria-label=\"Close modal\">Close</button>\n          </article>\n        </dialog>\n      </div>\n    </li>\n  ");
   }).join("");
 }
@@ -11632,10 +11645,20 @@ function renderFeaturedProjects() {
   var ulId = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "featured-projects";
   var ul = document.getElementById(ulId);
   if (!ul) return;
-  ul.innerHTML = _data_projects_json__WEBPACK_IMPORTED_MODULE_0__.filter(function (project) {
+  ul.innerHTML = _data_projects_json__WEBPACK_IMPORTED_MODULE_1__.filter(function (project) {
     return project.is_featured;
   }).map(function (project) {
     return "\n    <li class=\"quick-flip\">\n      <article class=\"card\" aria-labelledby=\"title-".concat(slugify(project.title), "\">\n        <h3 id=\"title-").concat(slugify(project.title), "\" class=\"card__title\">").concat(project.title, "</h3>\n        <p class=\"card__description\">").concat(project.description, "</p>\n        <hr class=\"card__divider\">\n      </article>\n    </li>\n  ");
+  }).join("");
+}
+function renderSkills() {
+  var ulId = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "skill-overview";
+  var ul = document.getElementById(ulId);
+  if (!ul) return;
+  ul.innerHTML = _data_skills_json__WEBPACK_IMPORTED_MODULE_0__.map(function (group) {
+    return "\n        <li class=\"list list--column list-skill__group\">\n          <span class=\"list-skill__group-title\">".concat(group.icon, " ").concat(group.group, ":</span>\n          <ul class=\"list-skill__items\">\n            ").concat(group.skills.map(function (skill) {
+      return "<li class=\"list-skill__item\">&#x2022; ".concat(skill, "</li>");
+    }).join(""), "\n          </ul>\n        </li>\n      ");
   }).join("");
 }
 
@@ -11827,6 +11850,9 @@ if (document.getElementById("projects-grid")) {
 }
 if (document.getElementById("featured-projects")) {
   (0,_Render_js__WEBPACK_IMPORTED_MODULE_2__.renderFeaturedProjects)();
+}
+if (document.getElementById("skill-overview")) {
+  (0,_Render_js__WEBPACK_IMPORTED_MODULE_2__.renderSkills)();
 }
 document.addEventListener("DOMContentLoaded", function () {
   (0,_animations_pop_in_js__WEBPACK_IMPORTED_MODULE_1__["default"])();

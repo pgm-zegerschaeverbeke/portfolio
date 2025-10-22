@@ -1,0 +1,37 @@
+[
+  {
+    "icon": "💻",
+    "group": "Front-end",
+    "skills": [
+      "HTML • CSS • JavaScript",
+      "GSAP for advanced web animations",
+      "Basic experience with Rive & Spline (interactive motion design)",
+      "Very basic knowledge of TypeScript & Angular"
+    ]
+  },
+  {
+    "icon": "🧩",
+    "group": "Back-end & CMS",
+    "skills": [
+      "Craft CMS & Twig templating",
+      "Node.js & Express"
+    ]
+  },
+  {
+    "icon": "🔧",
+    "group": "Workflow & Design",
+    "skills": [
+      "Git & GitHub",
+      "VS Code",
+      "Figma"
+    ]
+  },
+  {
+    "icon": "📚",
+    "group": "Currently learning",
+    "skills": [
+      "React and Vite",
+      "PHP with Laravel, Laravel Filament, and SQL"
+    ]
+  }
+]
