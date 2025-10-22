@@ -269,8 +269,7 @@ h6 {
   align-items: center;
   justify-content: center;
   gap: var(--gap-xxl);
-  min-height: 80svh;
-  min-height: 80vh;
+  padding-bottom: 12rem;
 }
 
 .section--footer {
@@ -579,10 +578,14 @@ textarea {
 .link--primary {
   display: flex;
   align-self: flex-end;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   transition: all 0.4s ease-in-out;
   &:hover {
     transform: translateY(-0.5rem);
+  }
+
+  @media (min-width: 768px) {
+    font-size: 1.5rem;
   }
 }
 
@@ -915,27 +918,6 @@ dialog[open] {
 .theme-toggle__moon:hover {
   rotate: 360deg;
 }
-.autoShow{
-  animation: autoShowAnimation both;
-  animation-timeline: view(80% 5%);
-}
-
-@starting-style {
-  .autoShow {
-    opacity: 0;
-    transform: translateY(200px) scale(0.3);
-  }
-}
-
-@keyframes autoShowAnimation{
-  from{
-      opacity: 0;
-      transform: translateY(200px) scale(0.3);
-  }to{
-      opacity: 1;
-      transform: translateY(0) scale(1);
-  }
-}
 .autoRotate{
   animation: autoRotateAnimation;
   animation-timeline: view();
@@ -954,27 +936,6 @@ dialog[open] {
   }
   to{
       transform: rotate(360deg);
-  }
-}
-.fadeInLeft{
-  animation: fadeInLeftAnimation both;
-  animation-timeline: view(80% 5%);
-}
-
-@starting-style {
-  .fadeInLeft {
-    opacity: 0;
-    transform: translateX(-400px);
-  }
-}
-
-@keyframes fadeInLeftAnimation{
-  from{
-      opacity: 0;
-      transform: translateX(-400px);
-  }to{
-      opacity: 1;
-      transform: translateX(0);
   }
 }
 @keyframes pulse {
@@ -1104,38 +1065,6 @@ html:not(:has(::view-transition-old(root))) body {
   transition: opacity 0.4s ease;
 }
 
-.fadeInNOut {
-  animation: fadeInNOutAnimation linear both;
-  animation-timeline: view();
-}
-
-@keyframes fadeInNOutAnimation {
-  0% {
-    opacity: 0;
-  }
-  20%{
-    opacity: 0;
-}
-30%, 70%{
-    opacity: 1;
-}
-80%{
-    opacity: 0;
-}
-100% {
-  opacity: 0;
-}
-}
-@keyframes fadeScaleOut {
-  from {
-    opacity: 1;
-    scale: 1;
-  }
-  to {
-    opacity: 0;
-    scale: 0;
-  }
-}
 .drawLoop {
   stroke-dasharray: 1500;
   stroke-dashoffset: 1500;

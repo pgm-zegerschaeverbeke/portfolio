@@ -20,14 +20,11 @@
 @import url("./components/sr.css");
 @import url("./components/theme-toggle.css");
 
-@import url("./animations/autoShow.css");
 @import url("./animations/autoRotate.css");
-@import url("./animations/fade-in-left.css");
 @import url("./animations/pulse.css");
 @import url("./animations/quick-flip.css");
 @import url("./animations/page-transition.css");
-@import url("./animations/fade-in-n-out.css");
-@import url("./animations/fade-out.css");
+
 @import url("./animations/drawLoop.css");
 @import url("./animations/phoneShake.css");
 

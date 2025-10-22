@@ -1,3 +1,5 @@
+import initMoveInLeftAnimations from "./animations/move-in-left.js";
+import initPopInAnimations from "./animations/pop-in.js";
 import { renderProjects, renderFeaturedProjects } from "./Render.js";
 
 (function () {
@@ -76,3 +78,12 @@ if (document.getElementById("projects-grid")) {
 if (document.getElementById("featured-projects")) {
   renderFeaturedProjects();
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  initPopInAnimations();
+  initMoveInLeftAnimations();
+});
+
+window.addEventListener("resize", () => {
+  ScrollTrigger.refresh();
+});

@@ -18,10 +18,14 @@
 .link--primary {
   display: flex;
   align-self: flex-end;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   transition: all 0.4s ease-in-out;
   &:hover {
     transform: translateY(-0.5rem);
+  }
+
+  @media (min-width: 768px) {
+    font-size: 1.5rem;
   }
 }
 
