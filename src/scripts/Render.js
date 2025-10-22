@@ -51,6 +51,28 @@ export function renderProjects(gridId = "projects-grid") {
     .join("");
 }
 
+export function renderFeaturedProjects(ulId = "featured-projects") {
+  const ul = document.getElementById(ulId);
+  if (!ul) return;
+
+  ul.innerHTML = projects
+    .filter((project) => project.is_featured)
+    .map(
+      (project) => `
+    <li class="quick-flip">
+      <article class="card" aria-labelledby="title-${slugify(project.title)}">
+        <h3 id="title-${slugify(project.title)}" class="card__title">${
+        project.title
+      }</h3>
+        <p class="card__description">${project.description}</p>
+        <hr class="card__divider">
+      </article>
+    </li>
+  `
+    )
+    .join("");
+}
+
 // Helper to create a slug from a project title
 function slugify(str) {
   return str

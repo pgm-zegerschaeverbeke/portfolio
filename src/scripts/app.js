@@ -1,11 +1,11 @@
-import { renderProjects } from './Render.js';
+import { renderProjects, renderFeaturedProjects } from "./Render.js";
 
 (function () {
   const $themeToggleButton = document.getElementById("theme-toggle");
   const $sunIcon = document.getElementById("sun-icon");
   const $moonIcon = document.getElementById("moon-icon");
   const $darkBackground = document.getElementById("dark-viewer");
-  const $lightBackground =document.getElementById("light-viewer")
+  const $lightBackground = document.getElementById("light-viewer");
 
   function loadTheme() {
     const savedTheme = localStorage.getItem("theme") || "light";
@@ -17,13 +17,13 @@ import { renderProjects } from './Render.js';
     if (theme === "light") {
       $sunIcon.style.display = "none";
       $moonIcon.style.display = "inline";
-      $darkBackground.style.display = "none"
-      $lightBackground.style.display = "block"
+      $darkBackground.style.display = "none";
+      $lightBackground.style.display = "block";
     } else {
       $sunIcon.style.display = "inline";
       $moonIcon.style.display = "none";
-      $darkBackground.style.display = "block"
-      $lightBackground.style.display = "none"
+      $darkBackground.style.display = "block";
+      $lightBackground.style.display = "none";
     }
   }
 
@@ -36,7 +36,6 @@ import { renderProjects } from './Render.js';
   });
 
   loadTheme();
-
 })();
 
 function openModal(modalName) {
@@ -44,20 +43,20 @@ function openModal(modalName) {
   $modal.showModal();
 
   const $closeButton = $modal.querySelector("[data-close]");
-  $closeButton.addEventListener('click', () => $modal.close());
+  $closeButton.addEventListener("click", () => $modal.close());
 }
 
 function initModals() {
-  const $triggers = document.querySelectorAll('button[data-trigger]');
+  const $triggers = document.querySelectorAll("button[data-trigger]");
 
-  $triggers.forEach($trigger => {
-      $trigger.addEventListener('click', () => {
-          openModal($trigger.getAttribute('data-trigger'));
-      });
+  $triggers.forEach(($trigger) => {
+    $trigger.addEventListener("click", () => {
+      openModal($trigger.getAttribute("data-trigger"));
+    });
   });
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
   initModals();
 
   const $sendBtn = document.getElementById("demo-send");
@@ -70,6 +69,10 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-if (document.getElementById('projects-grid')) {
+if (document.getElementById("projects-grid")) {
   renderProjects();
+}
+
+if (document.getElementById("featured-projects")) {
+  renderFeaturedProjects();
 }
