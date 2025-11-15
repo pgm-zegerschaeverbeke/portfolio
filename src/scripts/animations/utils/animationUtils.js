@@ -9,6 +9,5 @@ export function scrollTriggerConfig(trigger) {
       start: "top 85%",
       end: "bottom top",
       toggleActions: "play reverse play reverse",
-      markers: true,
   };
 }

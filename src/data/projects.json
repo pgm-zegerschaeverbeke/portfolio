@@ -1,12 +1,21 @@
 [
   {
+    "title": "Clar development",
+    "tech": ["HTML", "CSS", "JavaScript", "Laravel Mix", "GSAP"],
+    "image": "src/images/current-portfolio-mockup.webp",
+    "modalTitle": "Remake of Clar development WEB-4",
+    "description": "A modern, responsive portfolio website showcasing creative projects and skills. Built with vanilla JavaScript, featuring smooth animations powered by GSAP, custom CSS with PostCSS, and a clean build process using Laravel Mix.",
+    "github": "https://github.com/pgm-zegerschaeverbeke/clar-development",
+    "is_featured": true
+  },
+  {
     "title": "Current portfolio",
     "tech": ["HTML", "CSS", "JavaScript", "Laravel Mix", "GSAP"],
     "image": "src/images/current-portfolio-mockup.webp",
     "modalTitle": "Current Portfolio WEB-3",
     "description": "A modern, responsive portfolio website showcasing creative projects and skills. Built with vanilla JavaScript, featuring smooth animations powered by GSAP, custom CSS with PostCSS, and a clean build process using Laravel Mix.",
     "github": "https://github.com/pgm-zegerschaeverbeke/portfolio",
-    "is_featured": true
+    "is_featured": false
   },
   {
     "title": "Workshop reaction game",
