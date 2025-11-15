@@ -22,7 +22,6 @@ function initPopInAnimations() {
   const $popInElements = gsap.utils.toArray("[data-animation='pop-in']");
 
   $popInElements.forEach((element) => {
-    console.log("Animating pop-in element:", element);
     popInAnimation(element);
   });
 }

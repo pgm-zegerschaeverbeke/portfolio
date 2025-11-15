@@ -4,14 +4,16 @@
 
   overflow-y: clip;
 
-  > * {
+  & > * {
     display: block;
     transition: transform var(--transition-duration) var(--timing-function),
       translate 0ms calc(var(--transition-duration) / 2);
   }
 
-  &:is(:hover) > * {
-    transform: translateY(-2lh);
-    translate: 0 2lh;
+  @media (hover: hover) {
+    &:is(:hover) > * {
+      transform: translateY(-2lh);
+      translate: 0 2lh;
+    }
   }
 }

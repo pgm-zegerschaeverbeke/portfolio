@@ -16,15 +16,6 @@
     box-shadow: none;
   }
 
-  &:hover {
-    color: var(--bg);
-
-    .btn--primary {
-      background-color: var(--bg);
-      color: var(--bg-secondary);
-    }
-  }
-
   &::before {
     content: '';
     position: absolute;
@@ -37,8 +28,19 @@
     transition: width 0.3s ease;
   }
 
-  &:hover::before {
-    width: 100%;
+  @media (hover: hover) {
+    &:hover {
+      color: var(--bg);
+
+      & .btn--primary {
+        background-color: var(--bg);
+        color: var(--bg-secondary);
+      }
+    }
+
+    &:hover::before {
+      width: 100%;
+    }
   }
 }
 

@@ -172,15 +172,6 @@ h6 {
     box-shadow: none;
   }
 
-  &:hover {
-    color: var(--bg);
-
-    .btn--primary {
-      background-color: var(--bg);
-      color: var(--bg-secondary);
-    }
-  }
-
   &::before {
     content: '';
     position: absolute;
@@ -193,8 +184,19 @@ h6 {
     transition: width 0.3s ease;
   }
 
-  &:hover::before {
-    width: 100%;
+  @media (hover: hover) {
+    &:hover {
+      color: var(--bg);
+
+      & .btn--primary {
+        background-color: var(--bg);
+        color: var(--bg-secondary);
+      }
+    }
+
+    &:hover::before {
+      width: 100%;
+    }
   }
 }
 
@@ -1188,15 +1190,17 @@ dialog[open] {
 
   overflow-y: clip;
 
-  > * {
+  & > * {
     display: block;
     transition: transform var(--transition-duration) var(--timing-function),
       translate 0ms calc(var(--transition-duration) / 2);
   }
 
-  &:is(:hover) > * {
-    transform: translateY(-2lh);
-    translate: 0 2lh;
+  @media (hover: hover) {
+    &:is(:hover) > * {
+      transform: translateY(-2lh);
+      translate: 0 2lh;
+    }
   }
 }
 @view-transition {

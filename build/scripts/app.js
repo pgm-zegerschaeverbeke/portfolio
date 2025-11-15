@@ -11708,7 +11708,6 @@ function moveInLeftAnimation(element) {
 function initMoveInLeftAnimations() {
   var $moveInLeftElements = gsap__WEBPACK_IMPORTED_MODULE_1__["default"].utils.toArray("[data-animation='move-in-left']");
   $moveInLeftElements.forEach(function (element) {
-    console.log("Animating move-in-left element:", element);
     moveInLeftAnimation(element);
   });
 }
@@ -11747,7 +11746,6 @@ function popInAnimation(element) {
 function initPopInAnimations() {
   var $popInElements = gsap__WEBPACK_IMPORTED_MODULE_1__["default"].utils.toArray("[data-animation='pop-in']");
   $popInElements.forEach(function (element) {
-    console.log("Animating pop-in element:", element);
     popInAnimation(element);
   });
 }
@@ -11791,9 +11789,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _animations_move_in_left_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./animations/move-in-left.js */ "./src/scripts/animations/move-in-left.js");
 /* harmony import */ var _animations_pop_in_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./animations/pop-in.js */ "./src/scripts/animations/pop-in.js");
 /* harmony import */ var _Render_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Render.js */ "./src/scripts/Render.js");
+/* harmony import */ var gsap_ScrollTrigger__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! gsap/ScrollTrigger */ "./node_modules/gsap/ScrollTrigger.js");
+/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! gsap */ "./node_modules/gsap/index.js");
 
 
 
+
+
+gsap__WEBPACK_IMPORTED_MODULE_3__["default"].registerPlugin(gsap_ScrollTrigger__WEBPACK_IMPORTED_MODULE_4__.ScrollTrigger);
 (function () {
   var $themeToggleButton = document.getElementById("theme-toggle");
   var $themeToggleMobile = document.getElementById("theme-toggle-mobile");
@@ -11908,7 +11911,7 @@ document.addEventListener("DOMContentLoaded", function () {
   (0,_animations_move_in_left_js__WEBPACK_IMPORTED_MODULE_0__["default"])();
 });
 window.addEventListener("resize", function () {
-  ScrollTrigger.refresh();
+  gsap_ScrollTrigger__WEBPACK_IMPORTED_MODULE_4__.ScrollTrigger.refresh();
 });
 
 /***/ }),

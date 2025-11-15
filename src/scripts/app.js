@@ -1,6 +1,10 @@
 import initMoveInLeftAnimations from "./animations/move-in-left.js";
 import initPopInAnimations from "./animations/pop-in.js";
 import { renderProjects, renderFeaturedProjects, renderSkills } from "./Render.js";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import gsap from "gsap";
+
+gsap.registerPlugin(ScrollTrigger);
 
 (function () {
   const $themeToggleButton = document.getElementById("theme-toggle");

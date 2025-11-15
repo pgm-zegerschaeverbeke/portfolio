@@ -22,7 +22,6 @@ function initMoveInLeftAnimations() {
   const $moveInLeftElements = gsap.utils.toArray("[data-animation='move-in-left']");
 
   $moveInLeftElements.forEach((element) => {
-    console.log("Animating move-in-left element:", element);
     moveInLeftAnimation(element);
   });
 }
