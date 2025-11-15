@@ -2,7 +2,7 @@
   {
     "title": "Clar development",
     "tech": ["HTML", "CSS", "JavaScript", "GSAP", "ScrollTrigger", "DotLottie", "Laravel Mix"],
-    "image": "src/images/current-portfolio-mockup.webp",
+    "image": "src/images/clar-development-mockup.webp",
     "modalTitle": "Remake of Clar development WEB-4",
     "description": "A modern website remake for Clar, a strategy and communication agency. Features advanced scroll animations with GSAP and ScrollTrigger, horizontal scrolling testimonials, profile hover effects, custom cursor, and Lottie animations. Built with vanilla JavaScript, PostCSS, and Laravel Mix.",
     "github": "https://github.com/pgm-zegerschaeverbeke/clar-development",
