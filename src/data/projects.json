@@ -1,45 +1,29 @@
 [
   {
-    "title": "Stam remake",
-    "tech": ["HTML", "CSS Grid", "JS"],
-    "image": "src/images/stam-mockup.webp",
-    "modalTitle": "Stam Remake @work-1",
-    "description": "A clean and responsive redesign of the STAM museum site using modern layout techniques and smooth animations.",
-    "github": "https://github.com/pgm-zegerschaeverbeke/stam-remake",
+    "title": "Current portfolio",
+    "tech": ["HTML", "CSS", "JavaScript", "Laravel Mix", "GSAP"],
+    "image": "src/images/current-portfolio-mockup.webp",
+    "modalTitle": "Current Portfolio WEB-3",
+    "description": "A modern, responsive portfolio website showcasing creative projects and skills. Built with vanilla JavaScript, featuring smooth animations powered by GSAP, custom CSS with PostCSS, and a clean build process using Laravel Mix.",
+    "github": "https://github.com/pgm-zegerschaeverbeke/portfolio",
     "is_featured": true
   },
   {
-    "title": "Best of 2024",
-    "tech": ["HTML", "CSS", "CSS Grid", "JavaScript"],
-    "image": "src/images/bestOf-mockup.webp",
-    "modalTitle": "Best of 2024 @work-1",
-    "description": "A curated overview of 2024's standout songs, albums, movies, and series — fetched from external sources and displayed in an engaging, data-driven layout.",
-    "github": "https://github.com/pgm-zegerschaeverbeke/best-of-2024",
+    "title": "Workshop reaction game",
+    "tech": ["HTML", "CSS", "JavaScript", "Web Animations API"],
+    "image": "src/images/reaction-game-mockup.webp",
+    "modalTitle": "Workshop reaction game @work-2",
+    "description": "An interactive reaction time game built with vanilla JavaScript, challenging players to click a ball that appears at random positions. Features real-time scoring, a countdown timer that decreases with each successful click, a top 5 leaderboard, custom cursor, and smooth animations using the Web Animations API. Created as an educational workshop project.",
+    "github": "https://github.com/pgm-zegerschaeverbeke/reaction-game",
     "is_featured": true
   },
   {
-    "title": "Small app",
-    "tech": ["Figma"],
-    "image": "src/images/smallApp-mockup.webp",
-    "modalTitle": "Small music app WEB-2",
-    "description": "A sleek and intuitive music app concept, designed in Figma to explore UI patterns for browsing, playing, and organizing songs.",
-    "is_featured": false
-  },
-  {
-    "title": "To do app",
+    "title": "Make it happen",
     "tech": ["HTML", "CSS", "Node", "Express", "JavaScript"],
     "image": "src/images/todo-mockup.webp",
     "modalTitle": "To do app PGM-3",
     "description": "A functional to-do list app built with Node and Express, featuring task creation, categorization, and dynamic updates — designed to manage daily goals with clarity and structure.",
-    "github": "https://github.com/pgm-zegerschaeverbeke/todo-app",
-    "is_featured": false
-  },
-  {
-    "title": "Paws.",
-    "tech": ["HTML", "CSS"],
-    "image": "src/images/paws-mockup.webp",
-    "modalTitle": "Paws. digital agency WEB-1",
-    "description": "A concept website for a fictional digital agency, showcasing modern design, service sections, and a clean layout to reflect a professional online presence.",
+    "github": "https://github.com/pgm-zegerschaeverbeke/make-it-happen",
     "is_featured": true
   },
   {
@@ -51,12 +35,45 @@
     "is_featured": false
   },
   {
+    "title": "Best of 2024",
+    "tech": ["HTML", "CSS", "CSS Grid", "JavaScript"],
+    "image": "src/images/bestOf-mockup.webp",
+    "modalTitle": "Best of 2024 @work-1",
+    "description": "A curated overview of 2024's standout songs, albums, movies, and series — fetched from external sources and displayed in an engaging, data-driven layout.",
+    "github": "https://github.com/pgm-zegerschaeverbeke/best-of-2024",
+    "is_featured": false
+  },
+  {
+    "title": "Small app",
+    "tech": ["Figma"],
+    "image": "src/images/smallApp-mockup.webp",
+    "modalTitle": "Small music app WEB-2",
+    "description": "A sleek and intuitive music app concept, designed in Figma to explore UI patterns for browsing, playing, and organizing songs.",
+    "is_featured": false
+  },
+  {
+    "title": "Stam remake",
+    "tech": ["HTML", "CSS Grid", "JS"],
+    "image": "src/images/stam-mockup.webp",
+    "modalTitle": "Stam Remake @work-1",
+    "description": "A clean and responsive redesign of the STAM museum site using modern layout techniques and smooth animations.",
+    "github": "https://github.com/pgm-zegerschaeverbeke/stam-remake",
+    "is_featured": false
+  },
+  {
     "title": "Gamescom",
     "tech": ["HTML", "CSS", "JavaScript"],
     "image": "src/images/gamescom-mockup.webp",
     "modalTitle": "Gamescom PGM-1",
     "description": "A dynamic Gamescom-themed website brought to life with JavaScript — featuring interactive elements, live data handling, and a focus on immersive user experience.",
-    "github": "https://github.com/pgm-zegerschaeverbeke/gamescom",
+    "is_featured": false
+  },
+  {
+    "title": "Paws.",
+    "tech": ["HTML", "CSS"],
+    "image": "src/images/paws-mockup.webp",
+    "modalTitle": "Paws. digital agency WEB-1",
+    "description": "A concept website for a fictional digital agency, showcasing modern design, service sections, and a clean layout to reflect a professional online presence.",
     "is_featured": false
   },
   {
