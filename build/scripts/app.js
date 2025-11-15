@@ -11603,7 +11603,7 @@ export function normalizePath(path) {
   \********************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('[{"title":"Stam remake","tech":["HTML","CSS Grid","JS"],"image":"src/images/stam-mockup.webp","modalTitle":"Stam Remake @work-1","description":"A clean and responsive redesign of the STAM museum site using modern layout techniques and smooth animations.","is_featured":true},{"title":"Best of 2024","tech":["HTML","CSS","CSS Grid","JavaScript"],"image":"src/images/bestOf-mockup.webp","modalTitle":"Best of 2024 @work-1","description":"A curated overview of 2024\'s standout songs, albums, movies, and series — fetched from external sources and displayed in an engaging, data-driven layout.","is_featured":true},{"title":"Small app","tech":["Figma"],"image":"src/images/smallApp-mockup.webp","modalTitle":"Small music app WEB-2","description":"A sleek and intuitive music app concept, designed in Figma to explore UI patterns for browsing, playing, and organizing songs.","is_featured":false},{"title":"To do app","tech":["HTML","CSS","Node","Express","JavaScript"],"image":"src/images/todo-mockup.webp","modalTitle":"To do app PGM-3","description":"A functional to-do list app built with Node and Express, featuring task creation, categorization, and dynamic updates — designed to manage daily goals with clarity and structure.","is_featured":false},{"title":"Paws.","tech":["HTML","CSS"],"image":"src/images/paws-mockup.webp","modalTitle":"Paws. digital agency WEB-1","description":"A concept website for a fictional digital agency, showcasing modern design, service sections, and a clean layout to reflect a professional online presence.","is_featured":true},{"title":"Portfolio one pager","tech":["HTML","CSS"],"image":"src/images/portfolio-mockup.webp","modalTitle":"Portfolio WEB-2","description":"A dynamic portfolio site built in Web-2, featuring a masonry grid layout and rich animations to showcase creative work in an engaging, interactive flow.","is_featured":false},{"title":"Gamescom","tech":["HTML","CSS","JavaScript"],"image":"src/images/gamescom-mockup.webp","modalTitle":"Gamescom PGM-1","description":"A dynamic Gamescom-themed website brought to life with JavaScript — featuring interactive elements, live data handling, and a focus on immersive user experience.","is_featured":false},{"title":"Joie","tech":["HTML","CSS"],"image":"src/images/joie-mockup.webp","modalTitle":"Joie personal project","description":"Joie is a personal branding and design project for a fictional clothing label, created prior to my studies. It blends minimal aesthetics with a bold visual identity to capture a modern fashion vibe.","is_featured":false}]');
+module.exports = /*#__PURE__*/JSON.parse('[{"title":"Stam remake","tech":["HTML","CSS Grid","JS"],"image":"src/images/stam-mockup.webp","modalTitle":"Stam Remake @work-1","description":"A clean and responsive redesign of the STAM museum site using modern layout techniques and smooth animations.","github":"https://github.com/pgm-zegerschaeverbeke/stam-remake","is_featured":true},{"title":"Best of 2024","tech":["HTML","CSS","CSS Grid","JavaScript"],"image":"src/images/bestOf-mockup.webp","modalTitle":"Best of 2024 @work-1","description":"A curated overview of 2024\'s standout songs, albums, movies, and series — fetched from external sources and displayed in an engaging, data-driven layout.","github":"https://github.com/pgm-zegerschaeverbeke/best-of-2024","is_featured":true},{"title":"Small app","tech":["Figma"],"image":"src/images/smallApp-mockup.webp","modalTitle":"Small music app WEB-2","description":"A sleek and intuitive music app concept, designed in Figma to explore UI patterns for browsing, playing, and organizing songs.","is_featured":false},{"title":"To do app","tech":["HTML","CSS","Node","Express","JavaScript"],"image":"src/images/todo-mockup.webp","modalTitle":"To do app PGM-3","description":"A functional to-do list app built with Node and Express, featuring task creation, categorization, and dynamic updates — designed to manage daily goals with clarity and structure.","github":"https://github.com/pgm-zegerschaeverbeke/todo-app","is_featured":false},{"title":"Paws.","tech":["HTML","CSS"],"image":"src/images/paws-mockup.webp","modalTitle":"Paws. digital agency WEB-1","description":"A concept website for a fictional digital agency, showcasing modern design, service sections, and a clean layout to reflect a professional online presence.","is_featured":true},{"title":"Portfolio one pager","tech":["HTML","CSS"],"image":"src/images/portfolio-mockup.webp","modalTitle":"Portfolio WEB-2","description":"A dynamic portfolio site built in Web-2, featuring a masonry grid layout and rich animations to showcase creative work in an engaging, interactive flow.","is_featured":false},{"title":"Gamescom","tech":["HTML","CSS","JavaScript"],"image":"src/images/gamescom-mockup.webp","modalTitle":"Gamescom PGM-1","description":"A dynamic Gamescom-themed website brought to life with JavaScript — featuring interactive elements, live data handling, and a focus on immersive user experience.","github":"https://github.com/pgm-zegerschaeverbeke/gamescom","is_featured":false},{"title":"Joie","tech":["HTML","CSS"],"image":"src/images/joie-mockup.webp","modalTitle":"Joie personal project","description":"Joie is a personal branding and design project for a fictional clothing label, created prior to my studies. It blends minimal aesthetics with a bold visual identity to capture a modern fashion vibe.","is_featured":false}]');
 
 /***/ }),
 
@@ -11638,18 +11638,26 @@ function renderProjects() {
   var grid = document.getElementById(gridId);
   if (!grid) return;
   grid.innerHTML = _data_projects_json__WEBPACK_IMPORTED_MODULE_1__.map(function (project) {
-    return "\n    <li class=\"grid-list__item fadeInNOut\">\n      <h3 class=\"grid-list__title\">".concat(project.title, "</h3>\n      <div class=\"grid-list__actions\">\n        <button popovertarget=\"stack-").concat(slugify(project.title), "\" class=\"btn btn--secondary\" aria-controls=\"stack-").concat(slugify(project.title), "\" aria-expanded=\"false\">Tech Stack</button>\n        <div class=\"popover\" id=\"stack-").concat(slugify(project.title), "\" popover role=\"tooltip\">").concat(project.tech.join(", "), "</div>\n        <button data-trigger=\"modal-").concat(slugify(project.title), "\" class=\"btn btn--secondary\" aria-haspopup=\"dialog\" aria-controls=\"modal-").concat(slugify(project.title), "\" aria-expanded=\"false\">More info</button>\n        <dialog data-modal=\"modal-").concat(slugify(project.title), "\" id=\"modal-").concat(slugify(project.title), "\" class=\"modal\" role=\"dialog\" aria-modal=\"true\" aria-labelledby=\"modal-title-").concat(slugify(project.title), "\">\n          <article class=\"modal__content\">\n            <img src=\"").concat(project.image, "\" alt=\"").concat(project.title, " preview\" class=\"modal__image\" />\n            <div class=\"modal__text\">\n              <h4 id=\"modal-title-").concat(slugify(project.title), "\">").concat(project.modalTitle, "</h4>\n              <p><strong>Tech:</strong> ").concat(project.tech.join(", "), "</p>\n              <p>").concat(project.description, "</p>\n            </div>\n            <button data-close class=\"btn btn--close\" aria-label=\"Close modal\">Close</button>\n          </article>\n        </dialog>\n      </div>\n    </li>\n  ");
+    return "\n    <li class=\"grid-list__item fadeInNOut\" id=\"project-".concat(slugify(project.title), "\">\n      <h3 class=\"grid-list__title\">").concat(project.title, "</h3>\n      <div class=\"grid-list__actions\">\n        <button data-trigger=\"modal-").concat(slugify(project.title), "\" class=\"btn btn--primary\" aria-haspopup=\"dialog\" aria-controls=\"modal-").concat(slugify(project.title), "\" aria-expanded=\"false\">More info</button>\n        <dialog data-modal=\"modal-").concat(slugify(project.title), "\" id=\"modal-").concat(slugify(project.title), "\" class=\"modal\" role=\"dialog\" aria-modal=\"true\" aria-labelledby=\"modal-title-").concat(slugify(project.title), "\">\n          <article class=\"modal__content\">\n            <img src=\"").concat(project.image, "\" alt=\"").concat(project.title, " preview\" class=\"modal__image\" />\n            <div class=\"modal__text\">\n              <h4 id=\"modal-title-").concat(slugify(project.title), "\">").concat(project.modalTitle, "</h4>\n              <p><strong>Tech:</strong> ").concat(project.tech.join(", "), "</p>\n              <p>").concat(project.description, "</p>\n              ").concat(project.github ? "<p class=\"modal__github-hint\">Click <strong>Code</strong> to check out my code on GitHub</p>" : '', "\n            </div>\n            <div class=\"modal__actions\">\n              ").concat(project.github ? "<a href=\"".concat(project.github, "\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"btn btn--actions btn--tertiary\">Code</a>") : '', "\n              <button data-close class=\"btn btn--actions btn--secondary\" aria-label=\"Close modal\">Close</button>\n            </div>\n          </article>\n        </dialog>\n      </div>\n    </li>\n  ");
   }).join("");
 }
 function renderFeaturedProjects() {
   var ulId = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "featured-projects";
   var ul = document.getElementById(ulId);
   if (!ul) return;
-  ul.innerHTML = _data_projects_json__WEBPACK_IMPORTED_MODULE_1__.filter(function (project) {
+  var featuredProjects = _data_projects_json__WEBPACK_IMPORTED_MODULE_1__.filter(function (project) {
     return project.is_featured;
-  }).map(function (project) {
-    return "\n    <li class=\"quick-flip\">\n      <article class=\"card\" aria-labelledby=\"title-".concat(slugify(project.title), "\">\n        <h3 id=\"title-").concat(slugify(project.title), "\" class=\"card__title\">").concat(project.title, "</h3>\n        <p class=\"card__description\">").concat(project.description, "</p>\n        <hr class=\"card__divider\">\n      </article>\n    </li>\n  ");
+  });
+  ul.innerHTML = featuredProjects.map(function (project) {
+    return "\n    <li class=\"quick-flip\">\n      <button class=\"card\" data-trigger=\"modal-".concat(slugify(project.title), "\" aria-labelledby=\"title-").concat(slugify(project.title), "\" aria-haspopup=\"dialog\" aria-controls=\"modal-").concat(slugify(project.title), "\">\n        <article>\n          <h3 id=\"title-").concat(slugify(project.title), "\" class=\"card__title\">").concat(project.title, "</h3>\n          <p class=\"card__description\">").concat(project.description, "</p>\n          <hr class=\"card__divider\">\n        </article>\n      </button>\n    </li>\n  ");
   }).join("");
+
+  // Render modals for featured projects
+  var modalsContainer = document.createElement("div");
+  modalsContainer.innerHTML = featuredProjects.map(function (project) {
+    return "\n    <dialog data-modal=\"modal-".concat(slugify(project.title), "\" id=\"modal-").concat(slugify(project.title), "\" class=\"modal\" role=\"dialog\" aria-modal=\"true\" aria-labelledby=\"modal-title-").concat(slugify(project.title), "\">\n      <article class=\"modal__content\">\n        <img src=\"").concat(project.image, "\" alt=\"").concat(project.title, " preview\" class=\"modal__image\" />\n        <div class=\"modal__text\">\n          <h4 id=\"modal-title-").concat(slugify(project.title), "\">").concat(project.modalTitle, "</h4>\n          <p><strong>Tech:</strong> ").concat(project.tech.join(", "), "</p>\n          <p>").concat(project.description, "</p>\n          ").concat(project.github ? "<p class=\"modal__github-hint\">Click <strong>Code</strong> to check out my code on GitHub</p>" : '', "\n        </div>\n        <div class=\"modal__actions\">\n          ").concat(project.github ? "<a href=\"".concat(project.github, "\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"btn btn--actions btn--tertiary\">Code</a>") : '', "\n          <button data-close class=\"btn btn--actions btn--secondary\" aria-label=\"Close modal\">Close</button>\n        </div>\n      </article>\n    </dialog>\n  ");
+  }).join("");
+  document.body.appendChild(modalsContainer);
 }
 function renderSkills() {
   var ulId = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "skill-overview";
@@ -11765,9 +11773,10 @@ gsap__WEBPACK_IMPORTED_MODULE_0__.gsap.registerPlugin(gsap_ScrollTrigger__WEBPAC
 function scrollTriggerConfig(trigger) {
   return {
     trigger: trigger,
-    start: "top 70%",
+    start: "top 85%",
     end: "bottom top",
-    toggleActions: "play reverse play reverse"
+    toggleActions: "play reverse play reverse",
+    markers: true
   };
 }
 
@@ -11788,8 +11797,11 @@ __webpack_require__.r(__webpack_exports__);
 
 (function () {
   var $themeToggleButton = document.getElementById("theme-toggle");
+  var $themeToggleMobile = document.getElementById("theme-toggle-mobile");
   var $sunIcon = document.getElementById("sun-icon");
   var $moonIcon = document.getElementById("moon-icon");
+  var $sunIconMobile = document.getElementById("sun-icon-mobile");
+  var $moonIconMobile = document.getElementById("moon-icon-mobile");
   var $darkBackground = document.getElementById("dark-viewer");
   var $lightBackground = document.getElementById("light-viewer");
   function loadTheme() {
@@ -11799,24 +11811,34 @@ __webpack_require__.r(__webpack_exports__);
   }
   function updateStyles(theme) {
     if (theme === "light") {
-      $sunIcon.style.display = "none";
-      $moonIcon.style.display = "inline";
-      $darkBackground.style.display = "none";
-      $lightBackground.style.display = "block";
+      if ($sunIcon) $sunIcon.style.display = "none";
+      if ($moonIcon) $moonIcon.style.display = "inline";
+      if ($sunIconMobile) $sunIconMobile.style.display = "none";
+      if ($moonIconMobile) $moonIconMobile.style.display = "inline";
+      if ($darkBackground) $darkBackground.style.display = "none";
+      if ($lightBackground) $lightBackground.style.display = "block";
     } else {
-      $sunIcon.style.display = "inline";
-      $moonIcon.style.display = "none";
-      $darkBackground.style.display = "block";
-      $lightBackground.style.display = "none";
+      if ($sunIcon) $sunIcon.style.display = "inline";
+      if ($moonIcon) $moonIcon.style.display = "none";
+      if ($sunIconMobile) $sunIconMobile.style.display = "inline";
+      if ($moonIconMobile) $moonIconMobile.style.display = "none";
+      if ($darkBackground) $darkBackground.style.display = "block";
+      if ($lightBackground) $lightBackground.style.display = "none";
     }
   }
-  $themeToggleButton.addEventListener("click", function () {
+  function toggleTheme() {
     var currentTheme = document.documentElement.getAttribute("data-theme");
     var newTheme = currentTheme === "light" ? "dark" : "light";
     document.documentElement.setAttribute("data-theme", newTheme);
     localStorage.setItem("theme", newTheme);
     updateStyles(newTheme);
-  });
+  }
+  if ($themeToggleButton) {
+    $themeToggleButton.addEventListener("click", toggleTheme);
+  }
+  if ($themeToggleMobile) {
+    $themeToggleMobile.addEventListener("click", toggleTheme);
+  }
   loadTheme();
 })();
 function openModal(modalName) {
@@ -11853,6 +11875,34 @@ if (document.getElementById("featured-projects")) {
 }
 if (document.getElementById("skill-overview")) {
   (0,_Render_js__WEBPACK_IMPORTED_MODULE_2__.renderSkills)();
+}
+
+// Hamburger menu toggle functionality
+var $navToggle = document.getElementById("main-nav__toggle");
+var $navMenu = document.getElementById("main-nav__menu");
+if ($navToggle && $navMenu) {
+  $navToggle.addEventListener("click", function () {
+    $navToggle.classList.toggle("active");
+    $navMenu.classList.toggle("active");
+    var isExpanded = $navMenu.classList.contains("active");
+    $navToggle.setAttribute("aria-expanded", isExpanded);
+  });
+  var $navLinks = $navMenu.querySelectorAll("a");
+  $navLinks.forEach(function ($link) {
+    $link.addEventListener("click", function () {
+      $navToggle.classList.remove("active");
+      $navMenu.classList.remove("active");
+      $navToggle.setAttribute("aria-expanded", "false");
+    });
+  });
+  document.addEventListener("click", function (event) {
+    var isClickInsideNav = $navMenu.contains(event.target) || $navToggle.contains(event.target) || event.target.closest && event.target.closest(".main-nav__mobile-controls");
+    if (!isClickInsideNav && $navMenu.classList.contains("active")) {
+      $navToggle.classList.remove("active");
+      $navMenu.classList.remove("active");
+      $navToggle.setAttribute("aria-expanded", "false");
+    }
+  });
 }
 document.addEventListener("DOMContentLoaded", function () {
   (0,_animations_pop_in_js__WEBPACK_IMPORTED_MODULE_1__["default"])();

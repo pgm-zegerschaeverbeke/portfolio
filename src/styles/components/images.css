@@ -14,7 +14,13 @@
 .img--socials {
   position: absolute;
   top: 0;
-  height: 3.5rem;
+  height: 2.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .img--socials {
+    height: 3.5rem;
+  }
 }
 
 .img--socials-x {
@@ -114,13 +120,19 @@
 .img--mask {
   -webkit-mask-image: url("../images/blob.svg");
   mask-image: url("../images/blob.svg");
-  mask-size: 150%;
+  mask-size: 500%;
   mask-position: center;
   transition: all 0.3s ease-in-out;
 }
 
-.img--mask:hover {
-  mask-size: 500%;
+@media (min-width: 769px) {
+  .img--mask {
+    mask-size: 150%;
+  }
+
+  .img--mask:hover {
+    mask-size: 500%;
+  }
 }
 
 .phone__icon {

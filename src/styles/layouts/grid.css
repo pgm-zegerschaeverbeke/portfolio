@@ -10,11 +10,16 @@
   display: grid;
   grid-template-columns: subgrid;
   grid-column: 1;
+  background-color: var(--bg-tertiary);
+
+  & .btn-secondary {
+    box-shadow: none;
+  }
 
   &:hover {
     color: var(--bg);
 
-    .btn--secondary {
+    .btn--primary {
       background-color: var(--bg);
       color: var(--bg-secondary);
     }

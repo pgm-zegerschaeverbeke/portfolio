@@ -37,3 +37,7 @@
 .phone__icon-container {
   position: relative;
 }
+
+.container--pb-xl {
+  padding-bottom: var(--gap-xl);
+}

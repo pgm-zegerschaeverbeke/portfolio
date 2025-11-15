@@ -67,8 +67,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .link__socials {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
 }
 
 .link__socials p {

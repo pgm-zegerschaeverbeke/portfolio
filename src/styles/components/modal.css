@@ -46,6 +46,26 @@
   gap: var(--gap-s);
 }
 
+.modal__github-hint {
+  margin-top: var(--gap-s);
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+.modal__actions {
+  display: flex;
+  gap: var(--gap-s);
+  align-items: stretch;
+}
+
+.modal__actions .btn--actions {
+  flex: 1;
+}
+
+.modal__actions .btn--actions:only-child {
+  width: 100%;
+}
+
 dialog[open] {
   display: block;
   opacity: 1;

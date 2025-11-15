@@ -5,6 +5,7 @@
     "image": "src/images/stam-mockup.webp",
     "modalTitle": "Stam Remake @work-1",
     "description": "A clean and responsive redesign of the STAM museum site using modern layout techniques and smooth animations.",
+    "github": "https://github.com/pgm-zegerschaeverbeke/stam-remake",
     "is_featured": true
   },
   {
@@ -13,6 +14,7 @@
     "image": "src/images/bestOf-mockup.webp",
     "modalTitle": "Best of 2024 @work-1",
     "description": "A curated overview of 2024's standout songs, albums, movies, and series — fetched from external sources and displayed in an engaging, data-driven layout.",
+    "github": "https://github.com/pgm-zegerschaeverbeke/best-of-2024",
     "is_featured": true
   },
   {
@@ -29,6 +31,7 @@
     "image": "src/images/todo-mockup.webp",
     "modalTitle": "To do app PGM-3",
     "description": "A functional to-do list app built with Node and Express, featuring task creation, categorization, and dynamic updates — designed to manage daily goals with clarity and structure.",
+    "github": "https://github.com/pgm-zegerschaeverbeke/todo-app",
     "is_featured": false
   },
   {
@@ -53,6 +56,7 @@
     "image": "src/images/gamescom-mockup.webp",
     "modalTitle": "Gamescom PGM-1",
     "description": "A dynamic Gamescom-themed website brought to life with JavaScript — featuring interactive elements, live data handling, and a focus on immersive user experience.",
+    "github": "https://github.com/pgm-zegerschaeverbeke/gamescom",
     "is_featured": false
   },
   {

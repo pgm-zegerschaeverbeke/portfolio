@@ -4,12 +4,13 @@
   border: none;
   border-radius: 1.5rem;
   cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: rgb(0, 0, 0) 0px 3px 0px 4px, rgba(255, 227, 46, 0) 0px 6px 8px 8px, rgba(255, 221, 0, 0) 0px 0px 56px 40px, rgba(255, 222, 5, 0) 0px 0px 120px 100px, rgba(255, 222, 5, 0) 0px 0px 200px 120px, rgba(0, 0, 0, 0.2) 0px 14px 8px 0px, rgba(0, 0, 0, 0.3) 0px 19px 8px 0px;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
 }
 
-.btn--secondary,
-.btn--tertiary {
+.btn--primary {
   background-color: var(--bg-secondary);
   color: var(--bg);
 }
@@ -18,7 +19,16 @@
   transform: translateY(-2px);
 }
 
-.btn--close {
+.btn--secondary {
   background-color: var(--bg-secondary);
   color: var(--bg);
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.btn--tertiary {
+  background-color: var(--active-nav-link);
+  color: var(--neutrals-black);
+  font-weight: 500;
+  font-size: 1.2rem;
 }

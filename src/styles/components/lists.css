@@ -39,7 +39,7 @@
 }
 
 @media (hover: hover) {
-  .list__grid:hover .grid-list__item:not(:hover) {
+  .list__grid:has(.grid-list__item:hover) .grid-list__item:not(:hover) {
     filter: grayscale(1) blur(4px);
   }
 }
