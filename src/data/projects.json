@@ -4,7 +4,7 @@
     "tech": ["HTML", "CSS", "JavaScript", "GSAP", "ScrollTrigger", "DotLottie", "Laravel Mix"],
     "image": "src/images/clar-development-mockup.webp",
     "modalTitle": "Remake of Clar development WEB-4",
-    "description": "A modern website remake for Clar, a strategy and communication agency. Features advanced scroll animations with GSAP and ScrollTrigger, horizontal scrolling testimonials, profile hover effects, custom cursor, and Lottie animations. Built with vanilla JavaScript, PostCSS, and Laravel Mix.",
+    "description": "A modern website remake featuring GSAP scroll animations, horizontal scrolling testimonials, and Lottie animations.",
     "github": "https://github.com/pgm-zegerschaeverbeke/clar-development",
     "is_featured": true
   },
@@ -13,7 +13,7 @@
     "tech": ["HTML", "CSS", "JavaScript", "Laravel Mix", "GSAP"],
     "image": "src/images/current-portfolio-mockup.webp",
     "modalTitle": "Current Portfolio WEB-3",
-    "description": "A modern, responsive portfolio website showcasing creative projects and skills. Built with vanilla JavaScript, featuring smooth animations powered by GSAP, custom CSS with PostCSS, and a clean build process using Laravel Mix.",
+    "description": "A modern portfolio website showcasing projects and skills, built with vanilla JavaScript and GSAP animations.",
     "github": "https://github.com/pgm-zegerschaeverbeke/portfolio",
     "is_featured": false
   },
@@ -22,7 +22,7 @@
     "tech": ["HTML", "CSS", "JavaScript", "Web Animations API"],
     "image": "src/images/reaction-game-mockup.webp",
     "modalTitle": "Workshop reaction game @work-2",
-    "description": "An interactive reaction time game built with vanilla JavaScript, challenging players to click a ball that appears at random positions. Features real-time scoring, a countdown timer that decreases with each successful click, a top 5 leaderboard, custom cursor, and smooth animations using the Web Animations API. Created as an educational workshop project.",
+    "description": "An interactive reaction time game where players click a ball at random positions. Features real-time scoring, countdown timer, leaderboard, and Web Animations API.",
     "github": "https://github.com/pgm-zegerschaeverbeke/reaction-game",
     "is_featured": true
   },
