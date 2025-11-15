@@ -31,7 +31,7 @@
     "tech": ["HTML", "CSS", "Node", "Express", "JavaScript"],
     "image": "src/images/todo-mockup.webp",
     "modalTitle": "To do app PGM-3",
-    "description": "A functional to-do list app built with Node and Express, featuring task creation, categorization, and dynamic updates — designed to manage daily goals with clarity and structure.",
+    "description": "A functional to-do list app built with Node and Express, featuring task creation, categorization, and dynamic updates, designed to manage daily goals with clarity and structure.",
     "github": "https://github.com/pgm-zegerschaeverbeke/make-it-happen",
     "is_featured": true
   },
