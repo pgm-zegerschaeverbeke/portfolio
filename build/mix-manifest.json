@@ -3,6 +3,8 @@
     "/styles/main.css": "/styles/main.css",
     "/images/bestOf-mockup.webp": "/images/bestOf-mockup.webp",
     "/images/blob.svg": "/images/blob.svg",
+    "/images/clar-development-mockup.webp": "/images/clar-development-mockup.webp",
+    "/images/current-portfolio-mockup.webp": "/images/current-portfolio-mockup.webp",
     "/images/gamescom-mockup.webp": "/images/gamescom-mockup.webp",
     "/images/github-logo.avif": "/images/github-logo.avif",
     "/images/instagram-logo.avif": "/images/instagram-logo.avif",
@@ -22,7 +24,5 @@
     "/images/stam-mockup.webp": "/images/stam-mockup.webp",
     "/images/sun.png": "/images/sun.png",
     "/images/todo-mockup.webp": "/images/todo-mockup.webp",
-    "/images/twitter-logo.avif": "/images/twitter-logo.avif",
-    "/images/clar-development-mockup.webp": "/images/clar-development-mockup.webp",
-    "/images/current-portfolio-mockup.webp": "/images/current-portfolio-mockup.webp"
+    "/images/twitter-logo.avif": "/images/twitter-logo.avif"
 }
