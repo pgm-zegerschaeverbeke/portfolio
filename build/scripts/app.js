@@ -11850,6 +11850,11 @@ function openModal(modalName) {
   $closeButton.addEventListener("click", function () {
     return $modal.close();
   });
+  $modal.addEventListener("click", function (event) {
+    if (event.target === $modal) {
+      $modal.close();
+    }
+  });
 }
 function initModals() {
   var $triggers = document.querySelectorAll("button[data-trigger]");
