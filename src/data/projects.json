@@ -18,6 +18,15 @@
     "is_featured": false
   },
   {
+    "title": "Craft CMS portfolio",
+    "tech": ["Craft CMS", "PHP", "Twig", "HTML", "CSS", "JavaScript", "Spline"],
+    "image": "src/images/craft-cms-portfolio-mockup.webp",
+    "modalTitle": "Craft CMS portfolio",
+    "description": "Current portfolio made with Craft CMS (not up to date). Built with Craft CMS 5.8, Twig templating, and a modular content block system.",
+    "github": "https://github.com/pgm-zegerschaeverbeke/craft-portfolio",
+    "is_featured": false
+  },
+  {
     "title": "Workshop reaction game",
     "tech": ["HTML", "CSS", "JavaScript", "Web Animations API"],
     "image": "src/images/reaction-game-mockup.webp",
