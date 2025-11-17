@@ -27,6 +27,7 @@
 
 @import url("./animations/drawLoop.css");
 @import url("./animations/phoneShake.css");
+@import url("./animations/socialBounce.css");
 
 html {
   font-size: 16px;

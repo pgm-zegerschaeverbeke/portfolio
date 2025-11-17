@@ -47,6 +47,19 @@
   transition: transform 0.3s ease-in-out;
 }
 
+@media (hover: none) {
+  .link__socials .img--socials-gh {
+    animation: socialBounceGH 2s ease-in-out infinite;
+    transition: none;
+  }
+
+  .link__socials .img--socials-li {
+    animation: socialBounceLI 2s ease-in-out infinite;
+    animation-delay: 0.3s;
+    transition: none;
+  }
+}
+
 .deco-svg {
   position: absolute;
   top: -1rem;

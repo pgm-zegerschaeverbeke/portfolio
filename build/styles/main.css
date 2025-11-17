@@ -489,6 +489,19 @@ textarea {
   transition: transform 0.3s ease-in-out;
 }
 
+@media (hover: none) {
+  .link__socials .img--socials-gh {
+    animation: socialBounceGH 2s ease-in-out infinite;
+    transition: none;
+  }
+
+  .link__socials .img--socials-li {
+    animation: socialBounceLI 2s ease-in-out infinite;
+    animation-delay: 0.3s;
+    transition: none;
+  }
+}
+
 .deco-svg {
   position: absolute;
   top: -1rem;
@@ -1324,6 +1337,57 @@ html:not(:has(::view-transition-old(root))) body {
   80%  { transform: rotate(-1deg) scale(1.05); }
   100% { transform: rotate(0deg) scale(1); }
 }
+@keyframes socialBounce {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-6px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-3px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* For GitHub icon - needs to account for initial translateY(-4px) */
+@keyframes socialBounceGH {
+  0% {
+    transform: translateY(-4px);
+  }
+  25% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+  75% {
+    transform: translateY(-7px);
+  }
+  100% {
+    transform: translateY(-4px);
+  }
+}
+
+/* For LinkedIn icon - rotation preserved from base transform */
+@keyframes socialBounceLI {
+  0%, 50%, 100% {
+    transform: translateY(0) rotate(-3deg);
+  }
+  25% {
+    transform: translateY(-6px) rotate(-3deg);
+  }
+  75% {
+    transform: translateY(-3px) rotate(-3deg);
+  }
+}
+
+
 html {
   font-size: 16px;
   scroll-behavior: smooth;

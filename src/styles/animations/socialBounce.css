@@ -1,0 +1,50 @@
+@keyframes socialBounce {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-6px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-3px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* For GitHub icon - needs to account for initial translateY(-4px) */
+@keyframes socialBounceGH {
+  0% {
+    transform: translateY(-4px);
+  }
+  25% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+  75% {
+    transform: translateY(-7px);
+  }
+  100% {
+    transform: translateY(-4px);
+  }
+}
+
+/* For LinkedIn icon - rotation preserved from base transform */
+@keyframes socialBounceLI {
+  0%, 50%, 100% {
+    transform: translateY(0) rotate(-3deg);
+  }
+  25% {
+    transform: translateY(-6px) rotate(-3deg);
+  }
+  75% {
+    transform: translateY(-3px) rotate(-3deg);
+  }
+}
+
