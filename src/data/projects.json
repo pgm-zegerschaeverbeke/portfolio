@@ -2,7 +2,7 @@
   {
     "title": "Clar development",
     "tech": ["HTML", "CSS", "JavaScript", "GSAP", "ScrollTrigger", "DotLottie", "Laravel Mix"],
-    "image": "src/images/clar-development-mockup.webp",
+    "image": "src/assets/images/clar-development-mockup.webp",
     "modalTitle": "Remake of Clar development WEB-4",
     "description": "A modern website remake featuring GSAP scroll animations, horizontal scrolling testimonials, and Lottie animations.",
     "github": "https://github.com/pgm-zegerschaeverbeke/clar-development",
@@ -11,7 +11,7 @@
   {
     "title": "Current portfolio",
     "tech": ["HTML", "CSS", "JavaScript", "Laravel Mix", "GSAP"],
-    "image": "src/images/current-portfolio-mockup.webp",
+    "image": "src/assets/images/current-portfolio-mockup.webp",
     "modalTitle": "Current Portfolio WEB-3",
     "description": "A modern portfolio website showcasing projects and skills, built with vanilla JavaScript and GSAP animations.",
     "github": "https://github.com/pgm-zegerschaeverbeke/portfolio",
@@ -20,7 +20,7 @@
   {
     "title": "Craft CMS portfolio",
     "tech": ["Craft CMS", "PHP", "Twig", "HTML", "CSS", "JavaScript", "Spline"],
-    "image": "src/images/craft-cms-portfolio-mockup.webp",
+    "image": "src/assets/images/craft-cms-portfolio-mockup.webp",
     "modalTitle": "Craft CMS portfolio",
     "description": "Current portfolio made with Craft CMS (not up to date). Built with Craft CMS 5.8, Twig templating, and a modular content block system.",
     "github": "https://github.com/pgm-zegerschaeverbeke/craft-portfolio",
@@ -29,7 +29,7 @@
   {
     "title": "Workshop reaction game",
     "tech": ["HTML", "CSS", "JavaScript", "Web Animations API"],
-    "image": "src/images/reaction-game-mockup.webp",
+    "image": "src/assets/images/reaction-game-mockup.webp",
     "modalTitle": "Workshop reaction game @work-2",
     "description": "An interactive reaction time game where players click a ball at random positions. Features real-time scoring, countdown timer, leaderboard, and Web Animations API.",
     "github": "https://github.com/pgm-zegerschaeverbeke/reaction-game",
@@ -38,7 +38,7 @@
   {
     "title": "Make it happen",
     "tech": ["HTML", "CSS", "Node", "Express", "JavaScript"],
-    "image": "src/images/todo-mockup.webp",
+    "image": "src/assets/images/todo-mockup.webp",
     "modalTitle": "To do app PGM-3",
     "description": "A functional to-do list app built with Node and Express, featuring task creation, categorization, and dynamic updates, designed to manage daily goals with clarity and structure.",
     "github": "https://github.com/pgm-zegerschaeverbeke/make-it-happen",
@@ -47,7 +47,7 @@
   {
     "title": "Portfolio one pager",
     "tech": ["HTML", "CSS"],
-    "image": "src/images/portfolio-mockup.webp",
+    "image": "src/assets/images/portfolio-mockup.webp",
     "modalTitle": "Portfolio WEB-2",
     "description": "A dynamic portfolio site built in Web-2, featuring a masonry grid layout and rich animations to showcase creative work in an engaging, interactive flow.",
     "is_featured": false
@@ -55,7 +55,7 @@
   {
     "title": "Best of 2024",
     "tech": ["HTML", "CSS", "CSS Grid", "JavaScript"],
-    "image": "src/images/bestOf-mockup.webp",
+    "image": "src/assets/images/bestOf-mockup.webp",
     "modalTitle": "Best of 2024 @work-1",
     "description": "A curated overview of 2024's standout songs, albums, movies, and series — fetched from external sources and displayed in an engaging, data-driven layout.",
     "github": "https://github.com/pgm-zegerschaeverbeke/best-of-2024",
@@ -64,7 +64,7 @@
   {
     "title": "Small app",
     "tech": ["Figma"],
-    "image": "src/images/smallApp-mockup.webp",
+    "image": "src/assets/images/smallApp-mockup.webp",
     "modalTitle": "Small music app WEB-2",
     "description": "A sleek and intuitive music app concept, designed in Figma to explore UI patterns for browsing, playing, and organizing songs.",
     "is_featured": false
@@ -72,7 +72,7 @@
   {
     "title": "Stam remake",
     "tech": ["HTML", "CSS Grid", "JS"],
-    "image": "src/images/stam-mockup.webp",
+    "image": "src/assets/images/stam-mockup.webp",
     "modalTitle": "Stam Remake @work-1",
     "description": "A clean and responsive redesign of the STAM museum site using modern layout techniques and smooth animations.",
     "github": "https://github.com/pgm-zegerschaeverbeke/stam-remake",
@@ -81,7 +81,7 @@
   {
     "title": "Gamescom",
     "tech": ["HTML", "CSS", "JavaScript"],
-    "image": "src/images/gamescom-mockup.webp",
+    "image": "src/assets/images/gamescom-mockup.webp",
     "modalTitle": "Gamescom PGM-1",
     "description": "A dynamic Gamescom-themed website brought to life with JavaScript — featuring interactive elements, live data handling, and a focus on immersive user experience.",
     "is_featured": false
@@ -89,7 +89,7 @@
   {
     "title": "Paws.",
     "tech": ["HTML", "CSS"],
-    "image": "src/images/paws-mockup.webp",
+    "image": "src/assets/images/paws-mockup.webp",
     "modalTitle": "Paws. digital agency WEB-1",
     "description": "A concept website for a fictional digital agency, showcasing modern design, service sections, and a clean layout to reflect a professional online presence.",
     "is_featured": false
@@ -97,7 +97,7 @@
   {
     "title": "Joie",
     "tech": ["HTML", "CSS"],
-    "image": "src/images/joie-mockup.webp",
+    "image": "src/assets/images/joie-mockup.webp",
     "modalTitle": "Joie personal project",
     "description": "Joie is a personal branding and design project for a fictional clothing label, created prior to my studies. It blends minimal aesthetics with a bold visual identity to capture a modern fashion vibe.",
     "is_featured": false

@@ -7,4 +7,4 @@ mix.postCss("src/styles/main.css", "build/styles", [
   processCssUrls: false
 });
 
-mix.copyDirectory('src/images', 'build/images');
+mix.copyDirectory('src/assets/images', 'build/images');
