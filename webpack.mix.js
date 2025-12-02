@@ -8,3 +8,4 @@ mix.postCss("src/styles/main.css", "build/styles", [
 });
 
 mix.copyDirectory('src/assets/images', 'build/images');
+mix.copyDirectory('src/assets/favicon', 'build/favicon');

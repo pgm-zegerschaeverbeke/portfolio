@@ -25,5 +25,12 @@
     "/images/stam-mockup.webp": "/images/stam-mockup.webp",
     "/images/sun.png": "/images/sun.png",
     "/images/todo-mockup.webp": "/images/todo-mockup.webp",
-    "/images/twitter-logo.avif": "/images/twitter-logo.avif"
+    "/images/twitter-logo.avif": "/images/twitter-logo.avif",
+    "/favicon/apple-touch-icon.png": "/favicon/apple-touch-icon.png",
+    "/favicon/favicon-96x96.png": "/favicon/favicon-96x96.png",
+    "/favicon/favicon.ico": "/favicon/favicon.ico",
+    "/favicon/favicon.svg": "/favicon/favicon.svg",
+    "/favicon/site.webmanifest": "/favicon/site.webmanifest",
+    "/favicon/web-app-manifest-192x192.png": "/favicon/web-app-manifest-192x192.png",
+    "/favicon/web-app-manifest-512x512.png": "/favicon/web-app-manifest-512x512.png"
 }
