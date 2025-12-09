@@ -33,5 +33,6 @@
     "/favicon/favicon.svg": "/favicon/favicon.svg",
     "/favicon/site.webmanifest": "/favicon/site.webmanifest",
     "/favicon/web-app-manifest-192x192.png": "/favicon/web-app-manifest-192x192.png",
-    "/favicon/web-app-manifest-512x512.png": "/favicon/web-app-manifest-512x512.png"
+    "/favicon/web-app-manifest-512x512.png": "/favicon/web-app-manifest-512x512.png",
+    "/images/react-news.webp": "/images/react-news.webp"
 }

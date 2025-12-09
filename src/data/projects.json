@@ -9,6 +9,15 @@
     "is_featured": true
   },
   {
+    "title": "React News",
+    "tech": ["React", "Vite", "React Router", "TanStack Query", "GSAP", "Storybook", "CSS"],
+    "image": "src/assets/images/react-news.webp",
+    "modalTitle": "React News Application WEB-5",
+    "description": "A modern news application built with React. Features article browsing, authentication, bookmarks, comments, and a comprehensive design system documented in Storybook.",
+    "github": "https://github.com/pgm-zegerschaeverbeke/react-news",
+    "is_featured": true
+  },
+  {
     "title": "Clar development",
     "tech": ["HTML", "CSS", "JavaScript", "GSAP", "ScrollTrigger", "DotLottie", "Laravel Mix"],
     "image": "src/assets/images/clar-development-mockup.webp",
@@ -42,7 +51,7 @@
     "modalTitle": "Workshop reaction game @work-2",
     "description": "An interactive reaction time game where players click a ball at random positions. Features real-time scoring, countdown timer, leaderboard, and Web Animations API.",
     "github": "https://github.com/pgm-zegerschaeverbeke/reaction-game",
-    "is_featured": true
+    "is_featured": false
   },
   {
     "title": "Make it happen",
