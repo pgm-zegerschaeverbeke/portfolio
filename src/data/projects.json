@@ -1,5 +1,14 @@
 [
   {
+    "title": "Laravel Webshop",
+    "tech": ["Laravel", "PHP", "MariaDB", "Alpine.js", "Tailwind CSS", "Vite", "Filament", "Mollie"],
+    "image": "src/assets/images/laravel-webshop.webp",
+    "modalTitle": "Only Scams - Laravel Webshop DM3",
+    "description": "A fully functional e-commerce webshop built with Laravel. Features product catalog with AJAX filtering, shopping cart, Mollie payment integration, and Filament admin panel.",
+    "github": "https://github.com/pgm-zegerschaeverbeke/laravel-webshop",
+    "is_featured": true
+  },
+  {
     "title": "Clar development",
     "tech": ["HTML", "CSS", "JavaScript", "GSAP", "ScrollTrigger", "DotLottie", "Laravel Mix"],
     "image": "src/assets/images/clar-development-mockup.webp",
@@ -42,7 +51,7 @@
     "modalTitle": "To do app PGM-3",
     "description": "A functional to-do list app built with Node and Express, featuring task creation, categorization, and dynamic updates, designed to manage daily goals with clarity and structure.",
     "github": "https://github.com/pgm-zegerschaeverbeke/make-it-happen",
-    "is_featured": true
+    "is_featured": false
   },
   {
     "title": "Portfolio one pager",
