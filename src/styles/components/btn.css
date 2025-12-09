@@ -16,7 +16,7 @@
 }
 
 .btn:hover {
-  transform: translateY(-2px);
+  transform: scale(0.97);
 }
 
 .btn--secondary {

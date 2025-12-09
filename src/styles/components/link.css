@@ -8,20 +8,16 @@
   color: var(--bg);
   font-weight: 500;
   box-shadow: rgb(0, 0, 0) 0px 3px 0px 4px,
-    rgba(255, 227, 46, 0) 0px 6px 8px 8px,
-    rgba(255, 221, 0, 0) 0px 0px 56px 40px,
-    rgba(255, 222, 5, 0) 0px 0px 120px 100px,
-    rgba(255, 222, 5, 0) 0px 0px 200px 120px,
-    rgba(0, 0, 0, 0.2) 0px 14px 8px 0px, rgba(0, 0, 0, 0.3) 0px 19px 8px 0px;
+  rgba(0, 0, 0, 0.2) 0px 14px 8px 0px;
 }
 
 .link--primary {
   display: flex;
   align-self: flex-end;
   font-size: 1.25rem;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.3s ease-in-out;
   &:hover {
-    transform: translateY(-0.5rem);
+    transform: scale(0.97);
   }
 
   @media (min-width: 768px) {
@@ -36,6 +32,12 @@
   font-weight: 700;
   color: var(--neutrals-white);
   background-color: var(--neutrals-black);
+  box-shadow: rgb(0, 0, 0) 0px 3px 0px 4px,
+  rgba(255, 227, 46, 0) 0px 6px 8px 8px,
+  rgba(255, 221, 0, 0) 0px 0px 56px 40px,
+  rgba(255, 222, 5, 0) 0px 0px 120px 100px,
+  rgba(255, 222, 5, 0) 0px 0px 200px 120px,
+  rgba(0, 0, 0, 0.2) 0px 14px 8px 0px, rgba(0, 0, 0, 0.3) 0px 19px 8px 0px;
 
   @media screen and (min-width: 768px) {
     font-size: 3rem;

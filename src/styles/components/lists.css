@@ -9,9 +9,9 @@
 
 .list--skills {
   gap: var(--gap-s);
+  overflow: hidden;
+  position: relative;
 }
-
-
 
 .list-skill__group {
   gap: var(--gap-xs);

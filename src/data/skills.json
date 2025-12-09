@@ -6,7 +6,8 @@
       "HTML • CSS • JavaScript",
       "GSAP for advanced web animations",
       "Basic experience with Rive & Spline (interactive motion design)",
-      "Very basic knowledge of TypeScript & Angular"
+      "Very basic knowledge of TypeScript & Angular",
+      "React and Vite"
     ]
   },
   {
@@ -14,7 +15,11 @@
     "group": "Back-end & CMS",
     "skills": [
       "Craft CMS & Twig templating",
-      "Node.js & Express"
+      "Node.js & Express",
+      "PHP",
+      "Laravel",
+      "Laravel Filament",
+      "SQL"
     ]
   },
   {
@@ -30,8 +35,8 @@
     "icon": "📚",
     "group": "Currently learning",
     "skills": [
-      "React and Vite",
-      "PHP with Laravel, Laravel Filament, and SQL"
+      "Blender",
+      "React Native"
     ]
   }
 ]
