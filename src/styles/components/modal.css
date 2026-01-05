@@ -3,6 +3,7 @@
   border: none;
   border-radius: 0.75rem;
   width: calc(100% - 2rem);
+  max-height: 95svh;
   max-height: 95vh;
   background-color: var(--bg);
   color: var(--text);
