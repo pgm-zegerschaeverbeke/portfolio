@@ -108,7 +108,6 @@ if (document.getElementById("skill-overview")) {
   renderSkills();
 }
 
-// Hamburger menu toggle functionality
 const $navToggle = document.getElementById("main-nav__toggle");
 const $navMenu = document.getElementById("main-nav__menu");
 

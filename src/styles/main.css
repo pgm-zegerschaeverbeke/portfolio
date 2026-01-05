@@ -76,30 +76,19 @@ p {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: var(--gap-xxl);
+  gap: var(--gap-xl);
+
+  @media (min-width: 768px) {
+    gap: var(--gap-xxl);
+  }
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   p {
     font-size: 1.5rem;
   }
 
   h2 {
     font-size: 5rem;
-  }
-}
-
-.responsive-map {
-  width: 100%;
-  height: 15.625rem;
-  border: 0;
-  border-radius: 0.75rem;
-
-  @media (min-width: 30rem) {
-    height: 21.875rem;
-  }
-
-  @media (min-width: 48rem) {
-    height: 28.125rem;
   }
 }

@@ -299,7 +299,7 @@ h6 {
   align-items: center;
   justify-content: space-between;
 
-  @media screen and (min-width: 768px) {
+  @media (min-width: 768px) {
     flex-direction: row;
   }
 
@@ -858,12 +858,13 @@ textarea {
   padding: 0;
   border: none;
   border-radius: 0.75rem;
-  max-width: 40rem;
-  width: 100%;
+  width: calc(100% - 2rem);
+  max-height: 95vh;
   background-color: var(--bg);
   color: var(--text);
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.3);
-  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -885,7 +886,7 @@ textarea {
   display: flex;
   flex-direction: column;
   gap: var(--gap-m);
-  padding: 2rem;
+  padding: 1.5rem;
 }
 
 .modal__image {
@@ -931,6 +932,14 @@ dialog[open] {
   @starting-style {
     opacity: 0;
     scale: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .modal {
+    max-width: 40rem;
+    width: 100%;
+    max-height: 90vh;
   }
 }
 /* Mobile-first styles */
@@ -1507,10 +1516,14 @@ p {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: var(--gap-xxl);
+  gap: var(--gap-xl);
+
+  @media (min-width: 768px) {
+    gap: var(--gap-xxl);
+  }
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   p {
     font-size: 1.5rem;
   }
@@ -1519,19 +1532,3 @@ p {
     font-size: 5rem;
   }
 }
-
-.responsive-map {
-  width: 100%;
-  height: 15.625rem;
-  border: 0;
-  border-radius: 0.75rem;
-
-  @media (min-width: 30rem) {
-    height: 21.875rem;
-  }
-
-  @media (min-width: 48rem) {
-    height: 28.125rem;
-  }
-}
-

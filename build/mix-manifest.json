@@ -17,6 +17,7 @@
     "/images/portfolio-portrai.webp": "/images/portfolio-portrai.webp",
     "/images/portfolio-portrait.webp": "/images/portfolio-portrait.webp",
     "/images/projects-video.mp4": "/images/projects-video.mp4",
+    "/images/react-news.webp": "/images/react-news.webp",
     "/images/reaction-game-mockup.webp": "/images/reaction-game-mockup.webp",
     "/images/SEO/SEO-about.webp": "/images/SEO/SEO-about.webp",
     "/images/SEO/SEO-contact.webp": "/images/SEO/SEO-contact.webp",
@@ -33,6 +34,5 @@
     "/favicon/favicon.svg": "/favicon/favicon.svg",
     "/favicon/site.webmanifest": "/favicon/site.webmanifest",
     "/favicon/web-app-manifest-192x192.png": "/favicon/web-app-manifest-192x192.png",
-    "/favicon/web-app-manifest-512x512.png": "/favicon/web-app-manifest-512x512.png",
-    "/images/react-news.webp": "/images/react-news.webp"
+    "/favicon/web-app-manifest-512x512.png": "/favicon/web-app-manifest-512x512.png"
 }
